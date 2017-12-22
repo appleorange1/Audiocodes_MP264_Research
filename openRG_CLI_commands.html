@@ -1,0 +1,86 @@
+
+<html><head><title>openRG CLI commands</title></head><body><table border=1>
+<tr><th>Command</th><th>Long Description</th><th>Usage</th></tr>
+<tr><td> switch stp status</td><td>Display the status of STP and ports</td><td>Usage:<br>	status<br></td></tr>
+<tr><td> switch port info</td><td>Gives information of the port of given device</td><td>Usage:<br>	info &lt;device name&gt; &lt;port id&gt;<br></td></tr>
+<tr><td> switch info</td><td>Print Switch and Bridge information</td><td>Usage:<br>	info<br></td></tr>
+<tr><td> conf_get</td><td>(null)</td><td></td></tr>
+<tr><td> wbm debug_set</td><td>Stop and start WBM debug mode</td><td>Usage:<br>	wbm_debug_set &lt;0|1&gt;<br></td></tr>
+<tr><td> pvc scan</td><td>Scan predefined vpi.vci to determine PPP protocol</td><td></td></tr>
+<tr><td> media_server access rescan</td><td>Rescans root directory</td><td>Usage:<br>	rescan [root_dir]<br>	&lt;root_dir&gt; is partition name, e.g. &quot;A&quot;<br>	To rescan all shares don&#039;t pass root directory<br></td></tr>
+<tr><td> media_server type</td><td>Print the media server type</td><td>Usage:<br>	type<br></td></tr>
+<tr><td> voip_stats_print</td><td>Print VoIP statistics</td><td></td></tr>
+<tr><td> wins_update</td><td>(null)</td><td></td></tr>
+<tr><td> crash status</td><td>Indicates if there is a new crash log</td><td>Usage:<br>	crash status<br></td></tr>
+<tr><td> atm_oam sent</td><td>An OAM Packet has been sent</td><td></td></tr>
+<tr><td> factory generate</td><td>Generate factory settings from MAC address, provided by vendor or specified in parameter</td><td></td></tr>
+<tr><td> conf factory restore</td><td>Restore factory configuration</td><td>Usage:<br>	restore [-d] [-a]<br>	Options:<br>		-d - restore factory settings without rebooting the system<br></td></tr>
+<tr><td> conf print</td><td>Print configuration</td><td>Usage:<br>	print &lt;path&gt; [-i] [-m]<br>	 -i = print configuration in flat ini-file format<br>	 -m = print only modified fields<br>	or print / to print the whole configuration.<br></td></tr>
+<tr><td> 3g info</td><td>Get 3G card information</td><td></td></tr>
+<tr><td> upnp igd status</td><td>Display IGD status</td><td></td></tr>
+<tr><td> upnp status</td><td>Display UPnP status</td><td></td></tr>
+<tr><td> log_print</td><td>(null)</td><td></td></tr>
+<tr><td> watchdog conf</td><td>Configure the watchdog</td><td>Usage:<br>	conf &lt;keep alive signal margin&gt; &lt;pre-warning limit&gt; &lt;retry count&gt; &lt;boot message&gt;<br>	&lt;keep alive signal margin&gt; - between 20 and [34,51,60,64] seconds<br>	&lt;pre-warning limit&gt; - [0-3] 0: 1/2, 1: 1/4, 2: 1/8, 3: 1/16 of the max. WDT period.<br></td></tr>
+<tr><td> qos utilization</td><td>Connection utilization information</td><td>Usage:<br>	utilization [-h &lt;host&gt;|-a &lt;app&gt;] [-gh|-ga] [-n] [-c &lt;n&gt;]<br></td></tr>
+<tr><td> psmart_conf</td><td>Configure the psmart</td><td>Usage:<br>	psmart_conf &lt;enable/disable&gt; &lt;psmart_server_ip&gt; &lt;port&gt; &lt;config_upgrade_ip&gt; &lt;port&gt; &lt;load_server ip&gt; &lt;port&gt; &lt;monitor_interface&gt; &lt;network_interface&gt;<br></td></tr>
+<tr><td> cwmp status</td><td>Print CWMP status</td><td>Usage:<br>	status [-v]<br>		 Where -v - print also envelopes of pending request and responses</td></tr>
+<tr><td> rmt_mng_ssl_enable</td><td>(null)</td><td></td></tr>
+<tr><td> rmt_mng_enable</td><td>(null)</td><td></td></tr>
+<tr><td> bridge connection</td><td>Connect separate network interfaces to form one seamless LAN</td><td></td></tr>
+<tr><td> bridge config</td><td>Configure bridge</td><td></td></tr>
+<tr><td> bridge info</td><td>Print bridge information</td><td></td></tr>
+<tr><td> fastpath verbose</td><td>0/1 fastpath verbose debugging</td><td></td></tr>
+<tr><td> firewall ips_list create</td><td>Create IPs list</td><td>Usage:<br>	ips_list create<br></td></tr>
+<tr><td> firewall restart</td><td>Stop and start Firewall & NAT</td><td>Usage:<br>	restart<br>	Restart the Firewall<br></td></tr>
+<tr><td> connection pppoe</td><td>Configure pppoe interface</td><td></td></tr>
+<tr><td> connection l2tp_vpn</td><td>Configure l2tpc interface</td><td></td></tr>
+<tr><td> connection pptp_vpn</td><td>Configure pptpc interface</td><td></td></tr>
+<tr><td> connection pppoa</td><td>Configure pppoa interface</td><td></td></tr>
+<tr><td> connection vlan</td><td>Configure vlan interface</td><td></td></tr>
+<tr><td> inet_connection pppoe</td><td>Configure pppoe internet connection</td><td></td></tr>
+<tr><td> inet_connection l2tp</td><td>Configure l2tpc internet connection</td><td></td></tr>
+<tr><td> inet_connection pptp</td><td>Configure pptpc internet connection</td><td></td></tr>
+<tr><td> inet_connection pppoa</td><td>Configure pppoa internet connection</td><td></td></tr>
+<tr><td> inet_connection ether</td><td>Configure ethernet internet connection</td><td></td></tr>
+<tr><td> listener register</td><td>Register CLI listener for NS</td><td>Usage:<br>	register &lt;ns&gt;</td></tr>
+<tr><td> dsl_cmd status</td><td>show the xDSL status</td><td>Usage:<br>status<br></td></tr>
+<tr><td> buttons test_mode</td><td>Set button test mode</td><td>Usage:<br>	test_mode &lt;0|1&gt;<br></td></tr>
+<tr><td> bluetooth read_pskey</td><td>Read PS key in Bluetooth chip.</td><td>Usage:<br>	read_pskey &lt;store&gt; &lt;key&gt; &lt;length&gt;<br>	&lt;store&gt; can be &#039;default&#039;, &#039;psi&#039;, &#039;psf&#039;, &#039;psi,psf&#039;, &#039;psrom&#039;, &#039;psi,psf,psrom&#039;, &#039;psram&#039;, &#039;psram,psi&#039;, &#039;psram,psi,psf&#039; or &#039;psram,psi,psf,psrom&#039;<br>	&lt;length&gt; memory length (in WORD)to store the key, should be larger than the key, typical value: 50, maxinum: 55<br>	&lt;key&gt; key address. It should better be in HEX, i.e. 0x0001, which means BT_ADDRESS_PSKEY.</td></tr>
+<tr><td> dect test</td><td>test dect moudle application</td><td>Usage:<br>test<br></td></tr>
+<tr><td> rtp_cmd transfer_call</td><td>transfer call from source extension A to destination extension B</td><td>Usage:<br>transfer &lt;src ext num&gt; &lt;active call num 0/1&gt; &lt;dst ext num&gt; &lt;active call num 0/1&gt;<br></td></tr>
+<tr><td> redundant_proxy_cmd switch_registrar</td><td>switch the sip registrar to primary/redundant</td><td>Usage:<br>switch_registrar<br></td></tr>
+<tr><td> leds set</td><td>Set a specific led on/off/blink</td><td></td></tr>
+<tr><td> leds leds_set_state</td><td>transfer board's leds to specific state</td><td></td></tr>
+<tr><td> slic_dsp_cmd mpi_write</td><td>Write into an MPI register</td><td>Usage:<br>mpi_write &lt;EC val: 1 or 2&gt; &lt;register: NN-even&gt; &lt;val1:XX&gt; &lt;val2&gt; &lt;val3&gt; ...&lt;max-val16&gt;<br></td></tr>
+<tr><td> wireless security status</td><td>Check if wireless device security is enabled</td><td></td></tr>
+<tr><td> wireless ssid get</td><td>Get the SSID of the main wireless device</td><td></td></tr>
+<tr><td> wireless captive nationzone create</td><td>Create a wireless NationZone AP with a given SSID</td><td>Usage:<br>	create &lt;SSID&gt; &lt;URL&gt;<br></td></tr>
+<tr><td> wireless captive check</td><td>Check if a wireless captive portal is available</td><td>Usage:<br>	check<br></td></tr>
+<tr><td> wireless get_main</td><td>Get the main (i.e. physical) wireless device name</td><td>Usage:<br>	get_main<br><br></td></tr>
+<tr><td> misc disks</td><td>Print all connected disks and partitions</td><td></td></tr>
+<tr><td> misc lpq</td><td>Display print server status</td><td></td></tr>
+<tr><td> misc print_ram</td><td>print ram consumption for each process</td><td></td></tr>
+<tr><td> misc vlan_add</td><td>Add VLAN interface</td><td>Usage:<br>	vlan_add &lt;device_name&gt; &lt;vlan_id&gt;<br></td></tr>
+<tr><td> misc serial mute</td><td>Mute the serial interface</td><td>Usage:<br>	mute &lt;reboot&gt;<br>		&lt;reboot&gt;: do reboot if mute status was actually changed</td></tr>
+<tr><td> misc top start</td><td>Start profiling over event loop and estream</td><td>Usage:<br>	misc top start [raw [&lt;size&gt;] ]<br>	&lt;size&gt; ..... max number of events in buffer<br></td></tr>
+<tr><td> misc crash</td><td>Crash the system (to test debugging-tools)</td><td>Usage:<br>	crash [kernel | openrg | panic]<br></td></tr>
+<tr><td> firmware_update start</td><td>Start remote upgrade</td><td>Usage: start -u &lt;update_url&gt; [-c] [-i] <br>	-c: Check only - don&#039;t really flash<br>	-i: Ignore version number when deciding whether to burn the image<br></td></tr>
+<tr><td> conf_upgrade start</td><td>Remotely upgrade configution for MP264</td><td>Usage: start -u &lt;update_url&gt; [-c] [-i] <br>	-c: Check only - don&#039;t really flash<br>	-i: Ignore version number when deciding whether to burn the image<br></td></tr>
+<tr><td> log filter set</td><td>Add a filter to determine which component and above which level should messages be printed in this CLI session</td><td>Usage:<br>	set &lt;component1.severity1&gt; [component2.severity2] ...<br><br>	Component values are:<br><br>	other: Other<br>	3g: 3G<br>	atm: ATM<br>	backup: Backup<br>	bridge: Bridge<br>	buttons: Buttons<br>	cli: Command Line Interface<br>	dhcp: DHCP<br>	dns: DNS<br>	dslhome: DSL Home<br>	disk_mng: Disk Management<br>	ddns: Dynamic DNS<br>	file_server: File Server<br>	firewall: Firewall<br>	generic_proxy: Generic Proxy<br>	hss: HSS<br>	http: HTTP<br>	hw_switch: HW Switch<br>	hotplug: Hotplug<br>	igmp: IGMP<br>	ipsec: IPSec<br>	image: Image Library<br>	intercept: Interception<br>	kernel: Kernel<br>	l2tp: L2TP<br>	l2tpc: L2TP Client<br>	lpd: LPD<br>	util: LibJutil<br>	mail_client: Mail Client<br>	main: Main Task<br>	media_server: Media Server<br>	ppp: PPP<br>	pppoe_relay: PPPoE Relay<br>	pptp: PPTP<br>	pptpc: PPTP Client<br>	fastpath: Packet Streaming Engine (PSE)<br>	permst: Permanent Storage<br>	permissions: Permissions<br>	print_server: Print Server<br>	qos: QoS<br>	rmt_mng: Remote Management<br>	rmt_upd: Remote Update<br>	route: Route<br>	snmp: SNMP<br>	ssi: SSI<br>	stp: Spanning Tree Protocol<br>	syslog: Syslog<br>	tod: Time of Day<br>	upnp: UPnP<br>	upnp_igd: UPnP IGD<br>	voatm: VoATM<br>	voip: VoIP<br>	watchdog: Watch Dog<br>	web_filtering: Web Filtering<br>	wbm: Web-Based Management<br>	wget: Wget<br>	wireless: Wireless<br>	x509: X.509<br>	xml: XML<br><br>	Severity values are:<br><br>	none: None<br>	emerg: Emergency<br>	alert: Alert<br>	crit: Critical<br>	err: Error<br>	warn: Warning<br>	notice: Notice<br>	info: Information<br>	debug: Debug<br></td></tr>
+<tr><td> log print</td><td>Print the contents of a given syslog buffer to the console</td><td>Usage:<br>	print [varlog|fw] [component1.severity1] [component2.severity2] ...<br><br>	Component values are:<br><br>	other: Other<br>	3g: 3G<br>	atm: ATM<br>	backup: Backup<br>	bridge: Bridge<br>	buttons: Buttons<br>	cli: Command Line Interface<br>	dhcp: DHCP<br>	dns: DNS<br>	dslhome: DSL Home<br>	disk_mng: Disk Management<br>	ddns: Dynamic DNS<br>	file_server: File Server<br>	firewall: Firewall<br>	generic_proxy: Generic Proxy<br>	hss: HSS<br>	http: HTTP<br>	hw_switch: HW Switch<br>	hotplug: Hotplug<br>	igmp: IGMP<br>	ipsec: IPSec<br>	image: Image Library<br>	intercept: Interception<br>	kernel: Kernel<br>	l2tp: L2TP<br>	l2tpc: L2TP Client<br>	lpd: LPD<br>	util: LibJutil<br>	mail_client: Mail Client<br>	main: Main Task<br>	media_server: Media Server<br>	ppp: PPP<br>	pppoe_relay: PPPoE Relay<br>	pptp: PPTP<br>	pptpc: PPTP Client<br>	fastpath: Packet Streaming Engine (PSE)<br>	permst: Permanent Storage<br>	permissions: Permissions<br>	print_server: Print Server<br>	qos: QoS<br>	rmt_mng: Remote Management<br>	rmt_upd: Remote Update<br>	route: Route<br>	snmp: SNMP<br>	ssi: SSI<br>	stp: Spanning Tree Protocol<br>	syslog: Syslog<br>	tod: Time of Day<br>	upnp: UPnP<br>	upnp_igd: UPnP IGD<br>	voatm: VoATM<br>	voip: VoIP<br>	watchdog: Watch Dog<br>	web_filtering: Web Filtering<br>	wbm: Web-Based Management<br>	wget: Wget<br>	wireless: Wireless<br>	x509: X.509<br>	xml: XML<br><br>	Severity values are:<br><br>	none: None<br>	emerg: Emergency<br>	alert: Alert<br>	crit: Critical<br>	err: Error<br>	warn: Warning<br>	notice: Notice<br>	info: Information<br>	debug: Debug<br></td></tr>
+<tr><td> dev vdsl line_status</td><td>Get VDSL line status</td><td>Usage:<br>	line_status &lt;device name&gt;<br></td></tr>
+<tr><td> dev adsl line_status</td><td>Print ADSL line status params</td><td>Usage:<br>	line_status &lt;device name&gt;<br></td></tr>
+<tr><td> dev vr9_hw_switch reg_get</td><td>Get register value</td><td>Usage:<br>	reg_get &lt;register&gt;</td></tr>
+<tr><td> dev mii_reg_get</td><td>Get Ethernet MII register value</td><td>Usage:<br>	mii_reg_get &lt;dev_name&gt; &lt;register&gt;<br></td></tr>
+<tr><td> kernel sys_ioctl</td><td>issue gateway ioctl</td><td>Usage:<br>	sys_ioctl &lt;char_device_type&gt; &lt;command&gt; &lt;arg&gt;<br></td></tr>
+<tr><td> system die</td><td>Exit the gateway application and return ret</td><td></td></tr>
+<tr><td> system restore_factory_settings</td><td>Restore factory configuration</td><td>Usage:<br>	restore_factory_settings [-d] [-a] [-f]<br>	Options:<br>		-d - restore factory settings without rebooting the system<br>		-a - restore factory settings and remove persistent entries<br>		-f - erase configuration sections on flash<br></td></tr>
+<tr><td> flash commit</td><td>Save configuration to flash</td><td></td></tr>
+<tr><td> flash layout</td><td>Print the flash layout and content</td><td></td></tr>
+<tr><td> net igmp status</td><td>Print IGMP subscription of device</td><td>Usage:<br>	status [&lt;dev&gt;]&gt;</td></tr>
+<tr><td> net host</td><td>Resolve host by name</td><td>Usage:<br>	host &lt;name&gt;<br></td></tr>
+<tr><td> net protected_setup push_button</td><td>Start protected setup registration by push button</td><td></td></tr>
+<tr><td> net ifconfig</td><td>Configure network interface</td><td></td></tr>
+<tr><td> net connection_type start</td><td>start network connection type test</td><td>Usage:<br>	start<br></td></tr>
+<tr><td> net rg_ifconfig</td><td>List network devices</td><td>Usage:<br>	rg_ifconfig &lt;details_level&gt;</td></tr>
+</table></body></html>
