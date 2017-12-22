@@ -1,0 +1,924 @@
+ROM VER: 1.1.4
+CFG 06
+NAND
+NAND Read OK
+
+ROM VER: 1.1.4
+CFG 06
+NAND
+NAND Read OK
+DDR autotuning Rev 0.3c
+DDR size from 0xa0000000 - 0xa3ffffff
+DDR check ok... start booting...
+
+
+
+U-Boot 2010.06-LANTIQ-v-2.0.26-dirty (Aug 19 2015 - 11:45:23 on kevinzhu@Selfmade-ThinkPad)
+
+CLOCK CPU 500M RAM 250M
+DRAM:  64 MiB
+Now running in RAM - U-Boot at: 83f80000
+NAND:  NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit)
+128 MiB
+Bad block table found at page 65472, version 0x01
+Bad block table found at page 65408, version 0x01
+nand_read_bbt: Bad block at 0x000001ac0000
+*** Warning - bad CRC or NAND, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+LEDs init: RED....GREEN....Done
+Net:   Switch Auto Polling value = 0
+GPHY FW load for A2x !!
+GPHY FIRMWARE LOAD SUCCESSFULLY AT ADDR : 130000
+Internal phy(GE) firmware version: 0x0405
+vr9 Switch
+
+Type "run flash_nfs" to mount root filesystem over NFS
+
+Hit any key to stop autoboot:  0 
+Creating 1 MTD partitions on "nand0":
+0x000000100000-0x000002900000 : "mtd=0"
+UBI: attaching mtd1 to ubi0
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    129024 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: sub-page size:              512
+UBI: VID header offset:          512 (aligned 512)
+UBI: data offset:                2048
+UBI: attached mtd1 to ubi0
+UBI: MTD device name:            "mtd=0"
+UBI: MTD device size:            40 MiB
+UBI: number of good PEBs:        319
+UBI: number of bad PEBs:         1
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     1
+UBI: available PEBs:             27
+UBI: total number of reserved PEBs: 292
+UBI: number of PEBs reserved for bad PEB handling: 6
+UBI: max/mean erase counter: 2838/195
+
+Looking for active section/image:
+  0. section: type:1 not an image
+  1. section: type:3 not an image
+  2. section: type:3 not an image
+  3. section: type:2 image. reading section header @0x12c4f6c...
+Volume OpenRG found at volume id 1
+read 148 bytes from volume 1 to 81000000(buf address)
+     counter:0x2
+  4. section: type:2 image. reading section header @0x22a1f6c...
+Volume OpenRG found at volume id 1
+read 148 bytes from volume 1 to 81000000(buf address)
+     counter:0x3
+
+Verifying image(s):
+  4. section: image. reading image content 0xc11000@0x12c5000...
+Volume OpenRG found at volume id 1
+read 12652544 bytes from volume 1 to 81000000(buf address)
+     checking ... ok: 'Image downloaded from: http://tr069-fw.m2core.com.au/MP264_4_4_3P_p085_build_02_15_Jun_2016.rms' 0xc11000@0x81000000 count:0x3
+
+Active image: 0x81000000.
+## Starting application at 0x81000000 ...
+
+Uncompressing Linux...
+malloc: 00003E6C
+returned: 81C15020
+.................................................................................................................................................
+Done
+CramFS in RAM: copy image to proper location
+Running from : (0x81000008) CramFS will be at: 0x80552000
+Booting the kernel
+dcache writeback, cachesize 00008000 linesize 00000020
+icache invalidate, cachesize 00008000 linesize 00000020
+Lantiq xDSL CPE VR9
+mips_hpt_frequency = 250000000, counter_resolution = 2
+Linux version 2.6.21.5 #18 Wed Jun 15 14:04:23 IDT 2016
+rofs_addr: 00552000 (80552000), len: a10000, flash_start_addr: 10000000 (90000000) flash_len: 800000
+CramFS found in RAM
+rofs_start_addr: 80552000 len: a10000
+New Command Line: ifx_nand:0x02800000@0x00100000(UBI),-(Data)
+phym = 04000000, mem = 03e00000, max_pfn = 00003e00
+***IB*** Reserving memory for CP1 @0xa3e00000, size 0x00200000
+CPU revision is: 00019556
+Determined physical RAM map:
+User-defined physical RAM map:
+ memory: 03e00000 @ 00000000 (usable)
+Reserved 256k KLOG memory starting from Physical 0x03dc0000
+Initrd not found or empty - disabling initrd
+Built 1 zonelists.  Total pages: 15748
+Kernel command line: cramfs=0  mtdparts=physmap-flash.0:0x800000@0(OpenRG);ifx_nand:0x02800000@0x00100000(UBI),-(Data) slram=mainfs,0x00552000,+10551296 console=ttyS0,115200 mem=0x03e00000 vpe1_load_addr=0x83e00000 vpe1_mem=0x00200000 vpe_tlb_shared=1 vpe1_wired_tlb_entries=1 asidmask=0xff
+1 MIPSR2 register sets available
+Primary instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, linesize 32 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+Cache parity protection disabled
+Lantiq ICU driver, version 3.0.1, (c) 2001-2011 Lantiq Deutschland GmbH
+PID hash table entries: 256 (order: 8, 1024 bytes)
+Using 250.000 MHz high precision timer.
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 46816k/63488k available (2949k kernel code, 16616k reserved, 709k data, 180k init, 0k highmem)
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+Lantiq PCI host controller driver, version 1.2.0, (c) 2001-2011 Lantiq Deutschland GmbH
+ifx_pmu_init: Major 254
+Lantiq PMU driver, version 1.2.2, (c) 2001-2011 Lantiq Deutschland GmbH
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+NET: Registered protocol family 8
+NET: Registered protocol family 20
+NET: Registered protocol family 2
+Time: MIPS clocksource has been installed.
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP reno registered
+gptu: totally 6 16-bit timers/counters
+gptu: misc_register on minor 63
+gptu: succeeded to request irq 118
+gptu: succeeded to request irq 119
+gptu: succeeded to request irq 120
+gptu: succeeded to request irq 121
+gptu: succeeded to request irq 122
+gptu: succeeded to request irq 123
+IFX DMA driver, version ifxmips_dma_core.c:v1.0.17 
+,(c)2009 Infineon Technologies AG
+Lantiq CGU driver, version 1.1.27, (c) 2001-2011 Lantiq Deutschland GmbH
+Wired TLB entries for Linux read_c0_wired() = 1
+/proc/fs/cramfs_block_uncompressed created
+JFFS2 version 2.2. (NAND) (SUMMARY)  (C) 2001-2006 Red Hat, Inc.
+fuse init (API version 7.8)
+io scheduler noop registered
+io scheduler anticipatory registered (default)
+io scheduler deadline registered
+io scheduler cfq registered
+loop: loaded (max 8 devices)
+usbcore: registered new interface driver usblp
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/class/usblp.c: v0.13: USB Printer Device Class driver
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver usbserial
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/usb-serial.c: USB Serial Driver core
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/usb-serial.c: USB Serial support registered for GSM modem (1-port)
+usbcore: registered new interface driver option
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/option.c: USB Driver for GSM modems: v0.7.2
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/usb-serial.c: USB Serial support registered for Sierra USB modem
+usbcore: registered new interface driver sierra
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/sierra.c: USB Driver for Sierra Wireless USB modems: v.1.7.40
+md: raid0 personality registered for level 0
+md: raid1 personality registered for level 1
+u32 classifier
+    OLD policer on 
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+NET: Registered protocol family 21
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+IFX SWITCH API, Version 1.1.7.2
+SWAPI: Registered character device [switch_api] with major no [81]
+Switch API: PCE MicroCode loaded !!
+Switch Auto Polling value = 0
+GPHY FW load for A2x !!
+GPHY FIRMWARE LOAD SUCCESSFULLY AT ADDR : 530000
+IFX GPHY driver GE Mode, version ifxmips_vr9_gphy: V0.9 - Firmware: 405
+Lantiq (VRX) DSL CPE MEI driver, version 1.4.4, (c) 2013 Lantiq Deutschland GmbHKOAM is loaded successfully.
+ttyS0 at MMIO map 0xbe100c00 mem 0xbe100c00 (irq = 105) is a IFX_ASC
+Register ASC (UART) to PMCU.
+Lantiq ASC (UART) driver, version 1.0.9, (c) 2001-2011 Lantiq Deutschland GmbH
+Line: 127, function: deu_init
+Infineon Technologies DEU driver version 2.0.0 
+IFX DEU DES initialized (multiblock).
+IFX DEU AES initialized (multiblock).
+IFX DEU ARC4 initialized (multiblock).
+IFX DEU SHA1 initialized.
+IFX DEU MD5 initialized.
+IFX DEU SHA1_HMAC initialized.
+IFX DEU MD5_HMAC initialized.
+proc_file_create - setting res->write_proc = vrx_port_write_procmem
+Lantiq GPIO driver, version 1.2.14, (c) 2001-2011 Lantiq Deutschland GmbH
+operation_mask=0x3ff
+source_mask=0xff
+source=0x0
+blink_mask=0xffffff
+blink=0x0
+update_clock=0x0
+fpid=0x0
+store_mode=0x0
+fpis=0x0
+data_offset=0x0
+number_of_enabled_led=0x18
+data_mask=0xffffff
+data=0x108100
+mips0_access_mask=0xffffff
+mips0_access=0xffffff
+f_data_clock_on_rising=0x0
+Lantiq LED Controller driver, version 1.0.6, (c) 2001-2011 Lantiq Deutschland GmbH
+ifx_nand_init
+Probe for NAND flash...
+NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit)
+2 cmdlinepart partitions found on MTD device ifx_nand
+Creating 2 MTD partitions on "ifx_nand":
+0x00100000-0x02900000 : "UBI"
+0x02900000-0x08000000 : "Data"
+Infineon Technologies RCU driver version 1.0.8 
+Lantiq SSC driver, version 2.2.6, (c) 2001-2011 Lantiq Deutschland GmbH
+res = 83cd9300
+Freeing unused kernel memory: 180k freed
+Found device mainfs on mtdblock0
+Found device Data on mtdblock2
+klips_info:ipsec_init: KLIPS startup, FreeS/WAN IPSec version: 1.99
+NET: Registered protoVersion: 4.4.3P_p085_build_02
+Platform: Lantiq XWAY VRX288 Reference Board
+Compilation Time: 15-Jun-16 11:01:34
+Tag: Ntag-5_5_14
+Compilation Flags: CONFIG_PRIMUS=y CONFIG_RG_PROD_IMG=y CONFIG_RG_MTD_UTILS=y CONFIG_HW_DSP=n CONFIG_RG_VOIP_RV_SIP=y CONFIG_MP264=y CONFIG_26X=y LIC=/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/../c_audiocodes_xway_vrx.lic BUILD=build.MP264_PRIMUS DIST=VRX288
+User Information: elibe@mpsrv01 /home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg
+
+insmod: add-symbol-file build/debug/rg_klog.o 0xc0024000 -s .data 0xc0024430 -s .bss 0xc00245e0
+klog loaded
+
+insmod: add-symbol-file build/debug/rg_klog_ram_be.o 0xc0021000 -s .data 0xc0022a30 -s .bss 0xc0022bc0
+klog: Using RAM buffer at address 0xa3dc0000 size 0x40000
+klog: Invalid magic or checksum, reseting all information.
+klog: status 0
+Linux version 2.6.21.5 #18 Wed Jun 15 14:04:23 IDT 2016
+rofs_addr: 00552000 (80552000), len: a10000, flash_start_addr: 10000000 (90000000) flash_len: 800000
+CramFS found in RAM
+rofs_start_addr: 80552000 len: a10000
+New Command Line: ifx_nand:0x02800000@0x00100000(UBI),-(Data)
+phym = 04000000, mem = 03e00000, max_pfn = 00003e00
+***IB*** Reserving memory for CP1 @0xa3e00000, size 0x00200000
+CPU revision is: 00019556
+Determined physical RAM map:
+User-defined physical RAM map:
+ memory: 03e00000 @ 00000000 (usable)
+Reserved 256k KLOG memory starting from Physical 0x03dc0000
+Initrd not found or empty - disabling initrd
+Built 1 zonelists.  Total pages: 15748
+Kernel command line: cramfs=0  mtdparts=physmap-flash.0:0x800000@0(OpenRG);ifx_nand:0x02800000@0x00100000(UBI),-(Data) slram=mainfs,0x00552000,+10551296 console=ttyS0,115200 mem=0x03e00000 vpe1_load_addr=0x83e00000 vpe1_mem=0x00200000 vpe_tlb_shared=1 vpe1_wired_tlb_entries=1 asidmask=0xff
+1 MIPSR2 register sets available
+Primary instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, linesize 32 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+Cache parity protection disabled
+Lantiq ICU driver, version 3.0.1, (c) 2001-2011 Lantiq Deutschland GmbH
+PID hash table entries: 256 (order: 8, 1024 bytes)
+Using 250.000 MHz high precision timer.
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 46816k/63488k available (2949k kernel code, 16616k reserved, 709k data, 180k init, 0k highmem)
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+Lantiq PCI host controller driver, version 1.2.0, (c) 2001-2011 Lantiq Deutschland GmbH
+ifx_pmu_init: Major 254
+Lantiq PMU driver, version 1.2.2, (c) 2001-2011 Lantiq Deutschland GmbH
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+NET: Registered protocol family 8
+NET: Registered protocol family 20
+NET: Registered protocol family 2
+Time: MIPS clocksource has been installed.
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+TCP reno registered
+gptu: totally 6 16-bit timers/counters
+gptu: misc_register on minor 63
+gptu: succeeded to request irq 118
+gptu: succeeded to request irq 119
+gptu: succeeded to request irq 120
+gptu: succeeded to request irq 121
+gptu: succeeded to request irq 122
+gptu: succeeded to request irq 123
+IFX DMA driver, version ifxmips_dma_core.c:v1.0.17 
+,(c)2009 Infineon Technologies AG
+Lantiq CGU driver, version 1.1.27, (c) 2001-2011 Lantiq Deutschland GmbH
+Wired TLB entries for Linux read_c0_wired() = 1
+/proc/fs/cramfs_block_uncompressed created
+JFFS2 version 2.2. (NAND) (SUMMARY)  (C) 2001-2006 Red Hat, Inc.
+fuse init (API version 7.8)
+io scheduler noop registered
+io scheduler anticipatory registered (default)
+io scheduler deadline registered
+io scheduler cfq registered
+loop: loaded (max 8 devices)
+usbcore: registered new interface driver usblp
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/class/usblp.c: v0.13: USB Printer Device Class driver
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver usbserial
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/usb-serial.c: USB Serial Driver core
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/usb-serial.c: USB Serial support registered for GSM modem (1-port)
+usbcore: registered new interface driver option
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/option.c: USB Driver for GSM modems: v0.7.2
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/usb-serial.c: USB Serial support registered for Sierra USB modem
+usbcore: registered new interface driver sierra
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/os/linux-2.6/drivers/usb/serial/sierra.c: USB Driver for Sierra Wireless USB modems: v.1.7.40
+md: raid0 personality registered for level 0
+md: raid1 personality registered for level 1
+u32 classifier
+    OLD policer on 
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+NET: Registered protocol family 21
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+IFX SWITCH API, Version 1.1.7.2
+SWAPI: Registered character device [switch_api] with major no [81]
+Switch API: PCE MicroCode loaded !!
+Switch Auto Polling value = 0
+GPHY FW load for A2x !!
+GPHY FIRMWARE LOAD SUCCESSFULLY AT ADDR : 530000
+IFX GPHY driver GE Mode, version ifxmips_vr9_gphy: V0.9 - Firmware: 405
+Lantiq (VRX) DSL CPE MEI driver, version 1.4.4, (c) 2013 Lantiq Deutschland GmbHKOAM is loaded successfully.
+ttyS0 at MMIO map 0xbe100c00 mem 0xbe100c00 (irq = 105) is a IFX_ASC
+Register ASC (UART) to PMCU.
+Lantiq ASC (UART) driver, version 1.0.9, (c) 2001-2011 Lantiq Deutschland GmbH
+Line: 127, function: deu_init
+Infineon Technologies DEU driver version 2.0.0 
+IFX DEU DES initialized (multiblock).
+IFX DEU AES initialized (multiblock).
+IFX DEU ARC4 initialized (multiblock).
+IFX DEU SHA1 initialized.
+IFX DEU MD5 initialized.
+IFX DEU SHA1_HMAC initialized.
+IFX DEU MD5_HMAC initialized.
+proc_file_create - setting res->write_proc = vrx_port_write_procmem
+Lantiq GPIO driver, version 1.2.14, (c) 2001-2011 Lantiq Deutschland GmbH
+operation_mask=0x3ff
+source_mask=0xff
+source=0x0
+blink_mask=0xffffff
+blink=0x0
+update_clock=0x0
+fpid=0x0
+store_mode=0x0
+fpis=0x0
+data_offset=0x0
+number_of_enabled_led=0x18
+data_mask=0xffffff
+data=0x108100
+mips0_access_mask=0xffffff
+mips0_access=0xffffff
+f_data_clock_on_rising=0x0
+Lantiq LED Controller driver, version 1.0.6, (c) 2001-2011 Lantiq Deutschland GmbH
+ifx_nand_init
+Probe for NAND flash...
+NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit)
+2 cmdlinepart partitions found on MTD device ifx_nand
+Creating 2 MTD partitions on "ifx_nand":
+0x00100000-0x02900000 : "UBI"
+0x02900000-0x08000000 : "Data"
+Infineon Technologies RCU driver version 1.0.8 
+Lantiq SSC driver, version 2.2.6, (c) 2001-2011 Lantiq Deutschland GmbH
+res = 83cd9300
+Freeing unused kernel memory: 180k freed
+Found device mainfs on mtdblock0
+Found device Data on mtdblock2
+klips_info:ipsec_init: KLIPS startup, FreeS/WAN IPSec version: 1.99
+NET: Registered protocol family 15
+
+insmod: add-symbol-file build/debug/rg_klog.o 0xc0024000 -s .data 0xc0024430 -s .bss 0xc00245e0
+klog loaded
+
+insmod: add-symbol-file build/debug/rg_klog_ram_be.o 0xc0021000 -s .data 0xc0022a30 -s .bss 0xc0022bc0
+klog: Using RAM buffer at address 0xa3dc0000 size 0x40000
+klog: Invalid magic or checksum, reseting all information.
+klog: status 0
+klog initialization succeeded
+klog RAM store initialization succeeded.
+
+insmod: add-symbol-file build/debug/be_pppoa_mod.o 0xc002b000 -s .data 0xc002bc80 -s .bss 0xc002be00
+
+insmod: add-symbol-file build/debug/be_pppos_mod.o 0xc0028000 -s .data 0xc0029c20 -s .bss 0xc0029de0
+
+insmod: add-symbol-file build/debug/one_module.o 0xc00bc000 -s .main_flow 0xc00feca0 -s .data 0xc010eac0 -s .bss 0xc0110680
+Loading license 11abdd7902b4c3392ede6e59fdc98fdcab63838cc75a22340353e48f8b5699e12b3f8ec419d3c37d89813c4fa29f579304ff0ab2b0283e17a892879c330f69bd468575b699db90a52a1781c7e53f7e4b1524ad7f35aa8c84ba0688a2f54e8b88d8b15c6a08f3f958ed.VRX288_AUDIOCODES
+loading license key: VRX288_AUDIOCODES
+loading license key: VRX288_AUDIOCODES
+
+insmod: add-symbol-file build/debug/kleds_mod.o 0xc0030000 -s .data 0xc0030a30 -s .bss 0xc0030be0
+UBI: attaching mtd1 to ubi0
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    129024 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: sub-page size:              512
+UBI: VID header offset:          512 (aligned 512)
+UBI: data offset:                2048
+UBI: attached mtd1 to ubi0
+UBI: MTD device name:            "UBI"
+UBI: MTD device size:            40 MiB
+UBI: number of good PEBs:        319
+UBI: number of bad PEBs:         1
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     1
+UBI: available PEBs:             27
+UBI: total number of reserved PEBs: 292
+UBI: number of PEBs reserved for bad PEB handling: 6
+UBI: max/mean erase counter: 2838/195
+UBI: image sequence number: 206274252
+UBI: background thread "ubi_bgt0d" started, PID 23
+Press ESC to enter BOOT MENU mode.
+Initializing Watchdog components.
+[mt_rg_conf_compat:2739] saved_version=5.5.14, rg_version=5.5.14, saved_ext_version=4.4.3P_p085_build_02, external_version=4.4.3P_p085_build_02 .
+[mt_rg_conf_compat:2740] UPDATING SERIAL NUMBER .
+ACL_GetSerialNumberFromMAC: mac_str = 00:90:8F:80:DD:B8 
+ACL_GetSerialNumberFromMAC: iserial_num=8445368 .
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/eth0/mac
+path=dev/eth0/mac
+val=00:90:8F:80:DD:B8
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/eth1/mac
+path=dev/eth1/mac
+val=00:90:8F:80:DD:B8
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ptm0/mac
+path=dev/ptm0/mac
+val=00:90:8F:80:DD:B8
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/br0/mac
+path=dev/br0/mac
+val=00:90:8F:80:DD:B9
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/br1/mac
+path=dev/br1/mac
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/br2/mac
+path=dev/br2/mac
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/br3/mac
+path=dev/br3/mac
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ethoa0/mac
+path=dev/ethoa0/mac
+val=00:90:8F:80:DD:B8
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ethoa1/mac
+path=dev/ethoa1/mac
+val=00:90:8F:80:DD:BA
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ethoa2/mac
+path=dev/ethoa2/mac
+val=00:90:8F:80:DD:BB
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ethoa3/mac
+path=dev/ethoa3/mac
+val=00:90:8F:80:DD:BF
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ethoa4/mac
+path=dev/ethoa4/mac
+val=00:90:8F:80:DD:BE
+[mt_rg_conf_get_per_unit_params:2061] prm=dev/ethoa5/mac
+path=dev/ethoa5/mac
+val=00:90:8F:80:DD:BD
+[mt_rg_conf_get_per_unit_params:2061] prm=silabs_fxs_calibration/0/1476
+path=silabs_fxs_calibration/0/1476
+val=27983872
+[mt_rg_conf_get_per_unit_params:2061] prm=silabs_fxs_calibration/0/1477
+path=silabs_fxs_calibration/0/1477
+val=31719424
+[mt_rg_conf_get_per_unit_params:2061] prm=silabs_fxs_calibration/1/1476
+path=silabs_fxs_calibration/1/1476
+val=29753344
+[mt_rg_conf_get_per_unit_params:2061] prm=silabs_fxs_calibration/1/1477
+path=silabs_fxs_calibration/1/1477
+val=31588352
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/ext_conf/dspg_cmbs_parameters/Vbgp
+path=voip/ext_conf/dspg_cmbs_parameters/Vbgp
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/ext_conf/dspg_cmbs_parameters/Vref
+path=voip/ext_conf/dspg_cmbs_parameters/Vref
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/ext_conf/dspg_cmbs_parameters/RX_tune
+path=voip/ext_conf/dspg_cmbs_parameters/RX_tune
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/ext_conf/dspg_cmbs_parameters/RFPI
+path=voip/ext_conf/dspg_cmbs_parameters/RFPI
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/num_of_dect_lines
+path=voip/num_of_dect_lines
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/num_of_fxs_lines
+path=voip/num_of_fxs_lines
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/num_of_fxo_lines
+path=voip/num_of_fxo_lines
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=voip/num_of_dsp_devices
+path=voip/num_of_dsp_devices
+val=no-val
+[mt_rg_conf_get_per_unit_params:2061] prm=manufacturer/model_number
+path=manufacturer/model_number
+val=MP264
+[mt_rg_conf_get_per_unit_params:2061] prm=manufacturer/part_number
+path=manufacturer/part_number
+val=GGWV00528
+
+
+[mt_rg_conf_work_on_CLI_commands:1886] Starting to go over CLI_commands
+[mt_rg_conf_work_on_CLI_commands:1892] No CLI_commands were found - exiting
+
+[mt_rg_conf_compat:4129] updating remote access path
+[mt_create_list_access_DB 1873] start
+[mt_create_list_access_DB 1906] finished, 0 part writen
+dms_descr.xml:11: namespace error : Namespace prefix df on X_containerId is not defined
+<df:X_containerId>00000000-0000-0000-0000-000000000000</df:X_containerId>
+                 ^
+MAPS: 
+00400000-00848000 r-xp 00000000 1f:00 1478096    /mnt/cramfs/bin/openrg
+00857000-0090d000 rw-p 00447000 1f:00 1478096    /mnt/cramfs/b
+insmod: add-symbol-file build/debug/rg_klog_chardev.o 0xc007b000 -s .data 0xc007b3f0 -s .bss 0xc007b580
+in/oklog chardev initialized.
+penrg
+0090d000-00ab8000 rwxp 0090d000 00:00 0        
+insmod: add-symbol-file build/debug/log_chardev.o 0xc007d000 -s .data 0xc007d750 -s .bss 0xc007d8e0
+  [heap]
+2aaa8000-2aaad000 r-xp 00000000 1f:00 8490200    /mnt/cramfs/lib/ld-u
+insmod: add-symbol-file build/debug/tcp_mss.o 0xc007f000 -s .data 0xc007f580 -s .bss 0xc007f720
+Clibc-0.9.29.so
+2aaad000-2aaaf000 rw-p 2aaad000 00:00 0 
+2aabc000-2aabd000 rw-p 00004000 1f:00 8490200    /mnt/cramfs/lib/ld-uClibc-0.9.29.so
+2aabd000-2aad0000 r-
+insmod: add-symbol-file build/debug/rtp.o 0xc0087000 -s .data 0xc00895b0 -s .bss 0xc0089740
+xp 00000000 1f:00 9325500    /mnt/cramfs/lib/libopenrg.so
+2aad0000-2aadf000 ---p 2aad0000 00:00 0 
+2aadf000-2aae0000 rw-p 00012000 1f:00
+insmod: add-symbol-file build/debug/rg_ipsec.o 0xc0081000 -s .data 0xc00811b0 -s .bss 0xc0081320
+ 9325500    /mnt/cramfs/lib/libopenrg.so
+2aae0000-2ab2b000 r-xp 00000000 1f:00 9114456    /mnt/cramfs/lib/libjutil.so
+2ab2b000-2ab3b000 ---p 2ab2b000 00:00 0 
+2ab3b000-2ab4300
+insmod: add-symbol-file build/debug/ipsec_1des.o 0xc0094000 -s .data 0xc009a330 -s .bss 0xc009a5a0
+0 RATELIMIT: 2 messages of type IPSec kernel  packet reported 15 second(s) ago
+ipsec_1des_init(alg_type=15 alg_id=2 name=1des): ret=0
+rw-p 0004b000 1f:00 9114456    /mnt/cramfs/lib/libjutil.so
+2ab43000-2ab4a000 rw-p 2ab43000 00:00 0 
+2ab4a000-2ab82000 r-xp 00000000 1f:00 9406520    /mnt/cramf
+insmod: add-symbol-file build/debug/ipsec_3des.o 0xc009c000 -s .data 0xc00a23b0 -s .bss 0xc00a2620
+s/lib/libssl.so
+2ab82000-2ab91000 ---p 2ab82000 00:00 0 
+2ab91
+insmod: add-symbol-file build/debug/ipsec_null.o 0xc0083000 -s .data 0xc0083220 -s .bss 0xc0083400
+000-2ab95000 rw-p 00037000 1f:00 9406520    /mnt/cramfs/lib/libssl.so
+2ab95000-2ac87000 r-xp 00000000 1f:00 8569988    /mnt/cramfs/lib/libcrypto.so
+2ac87000-2ac96000 ---p 2ac87000 00:00 0 
+2ac96000-2aca8000 rw-p 000f1000 1f:00 8569
+insmod: add-symbol-file build/debug/ipsec_aes.o 0xc00af000 -s .data 0xc00b7a00 -s .bss 0xc00b7be0
+988    /mnt/cramfs/lib/libcrypto.so
+2aca8000-2acab000 rw-p 2aca8000 00:00 0 
+2acab000-2acad000 r-xp 00000000 1f:00 8885004    /mnt/cramfs/lib/libdl-0.9.2
+insmod: add-symbol-file build/debug/ipsec_sha1.o 0xc00a4000 -s .data 0xc00a7330 -s .bss 0xc00a7500
+9.so
+2acad000-2acbc000 ---p 2acad000 00:00 0 
+2acbc000-2acbd000 rw-p 00001000 1f:00 8885004    /mnt/cramfs/lib/libdl-0.9.29.so
+2ac
+insmod: add-symbol-file build/debug/ipsec_md5.o 0xc0090000 -s .data 0xc00924a0 -s .bss 0xc0092680
+bd000-2acd8000 r-xp 00000000 1f:00 9378992    /mnt/cramfs/lib/librg_config.so
+2acd8000-2ace8000 ---p 2acd8000 00:00 0 
+2ace8000-2aceb000 rw-p 0001b000 1f:00 9378992    /mnt/cramfs/lib/librg_config.so
+2aceb000-2acf8000 r-xp 00000000 1f:00 9362932    /mnt/cramfs/lib/l
+insmod: add-symbol-file build/debug/igmp_proxy_mod.o 0xc0157000 -s .data 0xc015c8c0 -s .bss 0xc015ca40
+ibpthread-0.9.29.so
+2acf8000-2ad07000 ---p 2acf8000 00:00 0 
+2ad07000-2ad0c000 rw-p 0000c000 1f:00 9362932    /mnt/cramfs/lib/libpthread-0.9.29.so
+2ad0c000-2ad0e000 rw-p 2ad0c000 00:00 0 
+2ad0e000-2ad28000 r-xp 00000000 1f:00 9
+insmod: add-symbol-file build/debug/rg_usfs.o 0xc002d000 -s .data 0xc002ddf0 -s .bss 0xc002df80
+217284    /mnt/cramfs/lib/libm-0.9.29.so
+2ad28000-2ad37000 ---p 2ad28000 00:00 0 
+2ad37000-2ad38000 rw-p 00019000 1
+insmod: add-symbol-file build/debug/rg_ipv4.o 0xc008b000 -s .data 0xc008b1f0 -s .bss 0xc008b380
+IPV4 device driver registered
+f:00 9217284    /mnt/cramfs/lib/libm-0.9.29.so
+2ad38000-2ad39000 r-xp 00000000 1f:00 9646560    /mnt/cramfs/lib/libutil-0.9.29.so
+2ad39000-2ad48000 ---p 2ad39000 00:00 0 
+2ad48000-2ad49000 rw-p 00000000 1f:00 9646560    /mnt/cramfs/lib/libutil-0.9.29.so
+2ad49000-2ad66000 r-xp 00000000 1f:00 8921232    /mnt/cramfs/lib/libexpat.so
+2ad66000-2ad75000 ---p 2ad66000 00:00 0 
+2ad75000-2ad77000 rw-p 0001c000 1f:00 8921232    /mnt/cramfs/lib/libexpat.so
+2ad77000-2ad8a000 r-xp 00000000 1f:00 8956064    /mnt/cramfs/lib/libfreeswan.so
+2ad8a000-2ad9a000 ---p 2ad8a000 00:00 0 
+2ad9a000-2ad9b000 rw-p 00013000 1f:00 8956064    /mnt/cramfs/lib/libfreeswan.so
+2ad9b000-2adef000 r-xp 00000000 1f:00 9530720    /mnt/cramfs/lib/libuClibc-0.9.29.so
+2adef000-2adfe000 ---p 2adef000 00:00 0 
+2adfe000-2adff000 rw-p 00053000 1f:00 9530720    /mnt/cramfs/lib/libuClibc-0.9.29.so
+2adff000-2ae04000 rw-p 2adff000 00:00 0 
+7f8ab000-7f8c0000 rwxp 7f8ab000 00:00 0          [stack]
+
+insmod: add-symbol-file build/debug/rt3062.o 0xc0284000 -s .data 0xc035fba0 -s .bss 0xc0365ca0
+
+insmod: add-symbol-file build/debug/nb_rt.o 0xc0085000 -s .data 0xc0085580 -s .bss 0xc0085720
+
+insmod: add-symbol-file build/debug/pppoe_relay.o 0xc01f7000 -s .data 0xc01f99b0 -s .bss 0xc01f9b20
+
+insmod: add-symbol-file build/debug/rg_pppoe_relay.o 0xc00a9000 -s .data 0xc00a96e0 -s .bss 0xc00a9880
+
+insmod: add-symbol-file build/debug/watchdog_mod.o 0xc00ab000 -s .data 0xc00ab750 -s .bss 0xc00ab900
+
+insmod: add-symbol-file build/debug/dect_drv_mod.o 0xc020e000 -s .data 0xc0212800 -s .bss 0xc0212a40
+Init IFX gpio for spi of SLIC0.
+MODE POLLING
+JL testing DECT set slic RESET low
+
+insmod: add-symbol-file build/debug/ac49x_dsp_mod.o 0xc0233000 -s .data 0xc0241310 -s .bss 0xc02416a0
+
+insmod: add-symbol-file build/debug/silabs_fxs_3226_drv_mod.o 0xc024b000 -s .data 0xc0258270 -s .bss 0xc0258be0
+init SLIC module
+insmod: cannot insert `/lib/modules/rtp.o': Success (17): Success
+Failed insmod rtp  (Success)
+
+insmod: add-symbol-file build/debug/phone_mod.o 0xc0152000 -s .data 0xc0153c00 -s .bss 0xc0153de0
+phone module init - allocating 9 num of extensions
+
+insmod: add-symbol-file build/debug/ac494_mod.o 0xc025c000 -s .data 0xc0264210 -s .bss 0xc02644e0
+
+
+****** AC49x init_module *****
+
+[init_module 5844] skipping analog configuration for DECT digital line (2)
+[init_module 5844] skipping analog configuration for DECT digital line (3)
+[init_module 5844] skipping analog configuration for DECT digital line (4)
+[init_module 5844] skipping analog configuration for DECT digital line (5)
+[init_module 5844] skipping analog configuration for DECT digital line (6)
+[init_module 5844] skipping analog configuration for DECT digital line (7)
+[init_module 5844] skipping analog configuration for DECT digital line (8)
+registering dsp device...	 SUCCESS
+
+insmod: add-symbol-file build/debug/btn.o 0xc008d000 -s .data 0xc008db00 -s .bss 0xc008dca0
+arch_buttons_init,133
+arch_buttons_init,135
+
+insmod: add-symbol-file build/debug/qos_ingress.o 0xc00ad000 -s .data 0xc00adab0 -s .bss 0xc00adc60
+
+insmod: add-symbol-file build/debug/drv_ifxos_mod.o 0xc014c000 -s .data 0xc014f9b0 -s .bss 0xc014fb40
+IFXOS, Version 1.5.14 (c) Copyright 2009, Lantiq Deutschland GmbH
+
+insmod: add-symbol-file build/debug/ifxusb_driver_mod.o 0xc0398000 -s .data 0xc03b1650 -s .bss 0xc03b2080
+IFXUSB: ifxusb_hcd: version 3.2 B140419
+IFXUSB:    OPTION: __IS_VR9__
+IFXUSB:    OPTION: __UEIP__
+IFXUSB:    OPTION: __PHY_LONG_PREEMP__
+IFXUSB:    OPTION: __UNALIGNED_BUF_ADJ__
+IFXUSB:    OPTION: __DEBUG__
+IFXUSB:    OPTION: __ENABLE_DUMP__
+IFXUSB:    OPTION: __IS_HOST__
+IFXUSB:            __IS_DUAL__
+IFXUSB:            __DYN_SOF_INTR__
+IFXUSB:            __UEIP__
+IFXUSB:            __DO_OC_INT__
+IFXUSB:            __INTRNAKRETRY__
+IFXUSB:            __INTRINCRETRY__
+Chip Version :0002 BurstSize=4
+IFXUSB: USB core #0 soft-reset
+IFXUSB: USB core #0 soft-reset
+hcd Prot1:80 0546 1350   Prot2:90 90000 SingleXact:0
+ifxusb_hcd ifxusb_hcd: IFX USB Controller
+ifxusb_hcd ifxusb_hcd: new USB bus registered, assigned bus number 1
+ifxusb_hcd ifxusb_hcd: irq 54, io mem 0xbe101000
+IFXUSB: Init: Power Port (0)
+��PX��PX�ؤ��4<6>usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+IFXUSB: USB core #1 soft-reset
+IFXUSB: USB core #1 soft-reset
+hcd Prot1:80 0546 1350   Prot2:90 90000 SingleXact:0
+ifxusb_hcd ifxusb_hcd: IFX USB Controller
+ifxusb_hcd ifxusb_hcd: new USB bus registered, assigned bus number 2
+ifxusb_hcd ifxusb_hcd: irq 83, io mem 0xbe106000
+IFXUSB: Init: Power Port (0)
+��X��X�ؤ��4<6>usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+
+insmod: add-symbol-file build/debug/drv_dsl_cpe_api_mod.o 0xc0368000 -s .data 0xc038f220 -s .bss 0xc038fe60
+
+
+Lantiq CPE API Driver version: DSL CPE API V4.16.6
+
+Predefined debug level: 3
+
+insmod: add-symbol-file build/debug/ifxmips_usif_uart_mod.o 0xc0222000 -s .data 0xc02248b0 -s .bss 0xc0224ba0
+ttyUSIF0 at MMIO map 0x1da00000 mem 0xbda00000 (irq = 117) is a USIF_UART
+Lantiq USIF-UART driver, version 1.1.0, (c) 2001-2011 Lantiq Deutschland GmbH
+Somkos_chardev_ioctl: type 62 not found
+e insmods failed. See above messages
+Cannot open rg_chrdev for type 62 Invalid argument
+factory dft = -1
+Freeing CRAMFS/MODFS: 832k freed
+kos_chardev_ioctl: type 62 not found
+Cannot open rg_chrdev for type 62 Invalid argument
+mt_rg_conf_bad_reboot_verify(). Reboot reason -1
+ 1 consecutive reboots
+userspace registering PID
+Watchdog task opened
+Previous crash detected - Logging
+out=MP2XX-KEY,GGWV00528,PACKETSMART,FILE_SERVER,PRINT_SERVER,LST,3G_BACKUP,VOIP,DLNA  outl=96
+  key_action_sip_lines: NUM_OF_SIP_LINES=
+key_action_dsl_mode: DSLMODE=
+
+insmod: add-symbol-file build/debug/ifxmips_ppa_hal_a5_mod.o 0xc0226000 -s .data 0xc022e8e0 -s .bss 0xc022ea40
+
+insmod: add-symbol-file build/debug/ifxmips_ppa_datapath_a5_mod.o 0xc03fa000 -s .data 0xc041e0e0 -s .bss 0xc0425260
+Loading A5 (MII0/1 + ATM) driver ...... Succeeded!
+PPE datapath driver info:
+  Version ID: 64.3.7.1.0.1.4
+  Family    : VR9
+  DR Type   : Normal Data Path | Indirect-Fast Path
+  Interface : MII0 | MII1 | ATM
+  Mode      : Routing
+  Release   : 0.1.4
+PPE firmware info:
+  Version ID: 7.4.2.11.1
+  Family    : VR9
+  FW Package: A5
+  Release   : 2.11.1
+PPE firmware feature:
+  ATM/PTM TC-Layer                Support
+  Packet Acceleration             Support
+  IPv4                            Support
+  IPv6                            Support
+  6RD                             Support
+  DS-Lite                         Support
+
+insmod: add-symbol-file build/debug/fastpath_plat_ppa_mod.o 0xc00b9000 -s .data 0xc00ba130 -s .bss 0xc00ba3a0
+IFX PPA API Directpath API loaded
+insmod: cannot insert `/lib/modules/fastpath_plat_ppa_mod.o': Success (1): Success
+uievents_wlan_error_cb:134: dev->name=ra0, from=0, to=1
+uievent_broadband_wan_cb:474: params: evt(2) dev(br0) from(0) to(1)
+uievent_gsm_wan_cb:607: 607, from=0, to=1, dev->name=gsm0
+uievents_dsl_link_cb:531: from=0, to=1
+uievents_dsl_link_cb:593: set BB red off
+uievent_broadband_wan_cb:474: params: evt(2) dev(ptm0) from(0) to(1)
+uievent_handle_physical_dev:370: params: dev(ptm0) from(0) to(1) led_mode(0)
+uievent_handle_logical_dev:419: params: evt(2) dev(ptm0) from(0) to(1) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(eth1) from(0) to(1)
+uievent_handle_physical_dev:370: params: dev(eth1) from(0) to(1) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ethoa0) from(0) to(1)
+eth1.100: Setting MAC address to  00 90 8f 80 dd b8.
+device eth1 entered promiscuous mode
+VLAN (eth1.100):  Setting underlying device (eth1) to promiscious mode.
+uievent_broadband_wan_cb:474: params: evt(2) dev(eth1.100) from(0) to(1)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ppp0) from(0) to(1)
+uievent_handle_logical_dev:419: params: evt(2) dev(ppp0) from(0) to(1) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ppp2) from(0) to(1)
+uievent_handle_logical_dev:419: params: evt(2) dev(ppp2) from(0) to(1) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ptm0.100) from(0) to(netdev_event_handler,12925: add 00:00:00:00:00:00
+netdev_event_handler,12925: add 00:90:8f:80:dd:b9
+1)
+uievent_broadband_wan_cb:474: params: evt(2) dev(br0) from(1) to(2)
+uievent_broadband_wan_cb:474: params: evt(2) dev(br0) from(2) to(3)
+uievent_broadband_wan_cb:474: params: evt(2) dev(br0) from(3) to(4)
+uievent_broadband_wan_cb:474: params: evt(2) dev(br0) from(4) to(5)
+uievent_broadband_wan_cb:474: params: evt(2) dev(br0) from(5) to(6)
+uievents_wlan_error_cb:134: dev->name=ra0, from=1, to=2
+0x1300 = 00064300
+netdev_event_handler,12925: add 00:90:8f:80:dd:bc
+device ra0 entered promiscuous mode
+uievents_wlan_error_cb:134: dev->name=ra0, from=2, to=3
+uievents_wlan_error_cb:134: dev->name=ra0, from=3, to=4
+uievents_wlan_error_cb:134: dev->name=ra0, from=4, to=5
+uievents_wlan_error_cb:134: dev->name=ra0, from=5, to=6
+uievents_dsl_link_cb:531: from=1, to=2
+uievents_dsl_link_cb:593: set BB red off
+dev_if_lantiq_xway_dsl_ioctl,224
+lantiq_xway_llcs,1070
+lantiq_xway_vdsl_g_inp_set,63: dir=1, conf_state=1, line_cfg.data.bReTxEnable=0
+lantiq_xway_vdsl_g_inp_set,63: dir=0, conf_state=1, line_cfg.data.bReTxEnable=0
+uievents_dsl_link_cb:531: from=2, to=3
+uievents_dsl_link_cb:593: set BB red off
+#lantiq_xway_dsl_vectoring_enabled:153##Vectoring 1 ###
+uievent_broadband_wan_cb:474: params: evt(2) dev(ptm0) from(1) to(2)
+uievent_handle_physical_dev:370: params: dev(ptm0) from(1) netdev_event_handler,12925: add 00:90:8f:00:00:00
+device eth0 entered promiscuous mode
+to(2) led_mode(0)
+uievent_handle_physical_dev:389: set BB red off
+uievent_handle_logical_dev:419: params: evt(2) dev(ptm0) from(1) to(2) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ethoa0) from(1) to(2)
+uievent_broadband_wan_cb:474: params: evt(2) dev(eth1.100) from(1) to(2)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ppp0) from(1) to(2)
+uievent_handle_logical_dev:419: params: evt(2) dev(ppp0) from(1) to(2) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ppp2) from(1) to(2)
+uievent_handle_logical_dev:419: params: evt(2) dev(ppp2) from(1) to(2) led_mode(0)
+uievent_broadband_wan_cb:474: params: evt(2) dev(ptm0.100) from(1) to(2)
+wdt_disable: wdt_disable()
+
+Got new margin: [40]
+Got new pre-warning: [3]
+Got new retry count: [3]
+Got new boot message: [Rebooted by watchdog!]
+[init:522] 
+total number of lines(7)
+set_line_extension_mapping: 338: num_of_lines: 0
+starting voip task watchdog
+VoIP task started
+check_dsl_startup_status,266
+uievent_gsm_wan_cb:607: 607, from=1, to=2, dev->name=gsm0
+Username: [voip.c:2227] checking SLICIOC_R_FXS_READ_INIT_DONE for dev /dev/ac494_slic1
+[voip.c:2246] init_done = 0.
+[voip.c:2255] setup a new timer .
+*rvLogFilter = 0
+[mt_voip_ipc 1228] voip is ready for ipc 
+[voip_conf_reload 186] voip: new configuration parameters loaded
+gpio driver open...	 SUCCESS
+[voip_conf_get_number_of_exts_type:3789] iNumOfFXSExts=2, iNumOfFXOExts=0, iNumOfDECTExts=0.
+[voip_[ifx_gpio_ioctl 297] dect power OFF
+conf_get_number_of_dsp_devices:3847] iNumOfDspDevices=1, iFirst=1.
+power off dect
+[dsp_c[ifx_gpio_ioctl 315] dect  DISABLE
+onf_init 1410] product(MP264)
+disable dect buffer
+[voip_dsp_fw_downlaod:168] failed openning file 
+[voip_dsp_fw_downlaod:172] calling open file /etc/ac_fw.fwb
+[voip_dsp_fw_downlaod:179] succeeded open file /etc/ac_fw.fwb
+UM DSP V****kernel tries to reset vpe1 
+ersion:ac_vrx_9.46
+crc32: 0x389ea3e0
+ac_vrx_9.46
+crc32: 0x389ea3e0
+*****FW CRC32 389ea3e0
+ifx_mps_release after delay VPE1 - CPU1 Address a3e00000
+[map_channel_id 639] WARNING: channels(6) exceeded max_num_of_digital_channles(5)
+[map_channel_id 639] WARNING: channels(7) exceeded max_num_of_digital_channles(5)
+----------i = DSP_REGIONAL_SETTINGS_CALL_PROGRESS_CALL_WAITING_TONE ----------
+[ac494_configure_dsp 5264] clock sorce: INTERNAL
+*****Host MASTER on TDM FSC & PCLK
+[mt_voip_ext_conf_poll:1995] ipc_connect failed
+[voip.c:2227] checking SLICIOC_R_FXS_READ_INIT_DONE for dev /dev/ac494_slic1
+[voip.c:2246] init_done = 0.
+[voip.c:2255] setup a new timer .
+ac494_channel_info_fill: get dsp channel of index 0
+ac494_channel_info_fill: dspch 0 TS 4 mode DWB CHType Real
+ac494_channel_info_fill: get dsp channel of index 1
+ac494_channel_info_fill: dspch 1 TS 8 mode DWB CHType Real
+ac494_channel_info_fill: get dsp channel of index 2
+ac494_channel_info_fill: dspch 2 TS 2 mode DNB CHType Real
+ac494_channel_info_fill: get dsp channel of index 3
+ac494_channel_info_fill: dspch 3 TS 0 mode DNB CHType Real
+ac494_slic_init,4046: country=Australia, cad=1
+Init IFX gpio for spi of SLIC0.
+MODE INTERRUPT
+JL testing DECT set slic RESET low
+TimerInit: pTimerObj->ticksPerSecond=0x64 .
+set VOIP_RESET gpio(0)
+set VOIP_RESET gpio(1)
+performing proslic init, num of channels = 2
+slic type is (28) Si32260
+CountryName=Australia 
+CountryName=Australia 
+Si3226Init ok driver version(6.5.0)
+[voip.c:2227] checking SLICIOC_R_FXS_READ_INITWARNING: slic was not bound and therefore may crash on dsp commands!!!
+[set_codec_params 3505] ignoring channel(-1)
+[set_codec_params 3505] ignoring channel(-1)
+[set_codec_params 3505] ignoring channel(-1)
+_DONE for dev /dev/ac494_slic1
+[voip.c:2246] init_done = 1.
+[voip.c:2263] FXS Calibration is not required, use preconfiured params.
+calibaration for line 0 Succeeded
+calibaration for line 1 Succeeded
+[/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/pkg/voip/phone_api.c 105] polling on slic status(1)
+[slic_init 269] passed slic_status_polling
+[voip_conf_get_number_of_lines:3753] iNumOfLines=8
+RV conf using localAddress 127.0.0.1
+RV conf using userDomain 127.0.0.1
+calling rvIppSipStackInitialize
+rvIppSipStackInitialize returned OK
+send caller id by default hard coded
+send caller id by default hard coded
+/home/local/AUDIOCODES/elibe/clearcase/elibe_MP262_dev1/CMBU/tulip/rg/pkg/voip/acl_pool.c: map status 
+
+ line 0:    disabled
+
+ line 1:    disabled
+
+ line 2:    disabled
+
+ line 3:    disabled
+
+ line 4:    disabled
+
+ line 5:    disabled
+
+ line 6:    disabled
+
+ line 7:    disabled
+ term status 
+term 0: not used.
+term 1: not used.
+term 2: not used.
+term 3: not used.
+
+ ipc_init finish! pid = 90
+memory_watchdog: interval=10000, memory_margin=3500 .
+openrg uses obsolete (PF_INET,SOCK_PACKET)
+
