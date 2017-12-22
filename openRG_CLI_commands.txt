@@ -1,0 +1,453 @@
+
+Command Category switch - HW switch commands
+stp          STP Commands
+port         Ports Commands
+info         Print Switch and Bridge information
+reset_vlan   Clear all the vlans
+mac_info     Get from mac table the port from which we can connect to this mac
+exit         Exit sub menu
+help         Show help for commands within this menu
+
+Command Category wbm - API for WBM debugging
+debug_set             Stop and start WBM debug mode
+border_set            Stop and start WBM border mode
+session_release_all   Release all existing WBM sessions
+themes                Print a list of available WBM themes
+exit                  Exit sub menu
+help                  Show help for commands within this menu
+
+Command Category pvc - PVC scan related commands
+scan           Scan predefined vpi.vci to determine PPP protocol
+scan_restart   Restart PVC scan
+scan_status    Display PVC scan status
+exit           Exit sub menu
+help           Show help for commands within this menu
+
+Command Category media_server - Media Server commands
+access   Access commands
+type     Print the media server type
+exit     Exit sub menu
+help     Show help for commands within this menu
+
+Command Category voip - Show VoIP statistics
+voip_stats_print      Print VoIP statistics
+voip_set_log_level    Sets the VoIP module logging level (0 = No Logs,...)
+crash                 saves and watch serial logs and crashes
+atm_oam               ATM OAM Commands, used for IPC from the Daemon
+factory               Manufacturing factory related commands
+conf                  Read and write configuration data
+3g                    3G Commands
+upnp                  UPnP commands
+watchdog              Watchdog configuration and control
+qos                   Control and display QoS data
+psmart_conf           Configure the psmart
+psmart_status         Display the psmart status
+cwmp                  CWMP related commands
+bridge                API for managing ethernet bridge
+fastpath              FastPath (PSE) commands
+firewall              Control and display Firewall and NAT data
+connection            API for managing connections
+inet_connection       API for managing internet connections
+listener              Listener related commands
+dsl_cmd               xDSL command for debug
+buttons               Button management
+bluetooth             Bluetooth command for MP264
+dect                  dect module command line for testing
+rtp_cmd               RTP debug commands
+redundant_proxy_cmd   redundant proxy feature command line for debug
+leds                  leds commands category
+slic_dsp_cmd          SLIC and DSP commands (read/write/dump SLIC registers, 
+                      activate dsp commands)
+wireless              Wireless commands
+misc                  API for miscellaneous tasks
+firmware_update       Firmware update commands
+conf_upgrade          Configuration update commands
+log                   Controls logging behavior
+dev                   Device related commands
+kernel                Kernel related commands
+system                Commands to control execution
+flash                 Flash and loader related commands
+net                   Network related commands
+exit                  Exit from the current CLI session
+help                  Show help for commands within this menu
+
+Command Category crash - saves and watch serial logs and crashes
+status                 Indicates if there is a new crash log
+reboot_reason          Reason of last reboot
+set_reboot_reason      Set the reason for coming reboot
+timestamps             Print a list of previuos serial and crash log timestamps
+log                    Watch previous saved logs
+save_buffer_now        Saves serial log to flash
+print_current_buffer   Show serial log as in buffer right now
+erase_buffer           Erase RAM serial log buffer
+exit                   Exit sub menu
+help                   Show help for commands within this menu
+
+Command Category atm_oam - ATM OAM Commands, used for IPC from the Daemon
+exit   Exit sub menu
+help   Show help for commands within this menu
+
+Command Category factory - Manufacturing factory related commands
+print_label           Print manufacturing label
+print_configuration   Print configuration parameters
+exit                  Exit sub menu
+help                  Show help for commands within this menu
+
+Command Category conf - Read and write configuration data
+factory            Factory related commands
+print              Print configuration
+compress           Compress & encode in base64 configuration
+uncompress         Restore configuration from compressed & encoded in base64 
+                   string
+cliprint           Print MP264 configuration in cli conf set format
+set                Set configuration path to value
+set_merge          Merge configuration set to path
+set_obscure        Set configuration path to an obscured value
+set_permission     Set permission configuration path value
+print_permission   Print permission configuration for path
+del                Delete subtree from configuration
+ram_set            Set dynamic configuration
+ram_print          Print dynamic configuration
+ram_del            Delete dynamic configuration
+restore_section    restore default configuration to section
+reconf             Reconfigure the system according to the current configuration
+setmac             Sets the WAN device MAC address as a factory setting
+set_analog_lines   Sets number of FXO and FXS lines to rg_factory
+get_from_factory   Get a parameter from factory to running configuration, if 
+                   exists
+exit               Exit sub menu
+help               Show help for commands within this menu
+
+Command Category 3g - 3G Commands
+info               Get 3G card information
+network            Get 3G network information
+cmd                Execute a custom AT command
+set_allowed_mode   Set allowed mode
+get_allowed_mode   Get current allowed mode
+set_domain         Set allowed domains for attachments
+get_domain         Get attachment domain
+exit               Exit sub menu
+help               Show help for commands within this menu
+
+Command Category upnp - UPnP commands
+igd      IGD commands
+status   Display UPnP status
+exit     Exit sub menu
+help     Show help for commands within this menu
+
+Command Category watchdog - Watchdog configuration and control
+conf     Configure the watchdog
+status   Display the watchdog status
+test     test the watchdog
+exit     Exit sub menu
+help     Show help for commands within this menu
+
+Command Category qos - Control and display QoS data
+utilization   Connection utilization information
+exit          Exit sub menu
+help          Show help for commands within this menu
+
+Command Category psmart - psmart configuration and control
+psmart_conf           Configure the psmart
+psmart_status         Display the psmart status
+cwmp                  CWMP related commands
+bridge                API for managing ethernet bridge
+fastpath              FastPath (PSE) commands
+firewall              Control and display Firewall and NAT data
+connection            API for managing connections
+inet_connection       API for managing internet connections
+listener              Listener related commands
+dsl_cmd               xDSL command for debug
+buttons               Button management
+bluetooth             Bluetooth command for MP264
+dect                  dect module command line for testing
+rtp_cmd               RTP debug commands
+redundant_proxy_cmd   redundant proxy feature command line for debug
+leds                  leds commands category
+slic_dsp_cmd          SLIC and DSP commands (read/write/dump SLIC registers, 
+                      activate dsp commands)
+wireless              Wireless commands
+misc                  API for miscellaneous tasks
+firmware_update       Firmware update commands
+conf_upgrade          Configuration update commands
+log                   Controls logging behavior
+dev                   Device related commands
+kernel                Kernel related commands
+system                Commands to control execution
+flash                 Flash and loader related commands
+net                   Network related commands
+exit                  Exit from the current CLI session
+help                  Show help for commands within this menu
+
+Command Category cwmp - CWMP related commands
+status                Print CWMP status
+session_start         Start CWMP session to ACS
+session_stop          Stop CWMP session
+session_set_timeout   Set session timeout
+dump_data_model       Dump data model
+get_params            Show CWMP parameter values
+set_params            Set CWMP parameter value and prints the response
+exit                  Exit sub menu
+help                  Show help for commands within this menu
+
+Command Category bridge - API for managing ethernet bridge
+connection   Connect separate network interfaces to form one seamless LAN
+config       Configure bridge
+info         Print bridge information
+mac          add/delete mac mapping
+exit         Exit sub menu
+help         Show help for commands within this menu
+
+Command Category fastpath - FastPath (PSE) commands
+verbose   0/1 fastpath verbose debugging
+info      dump fastpath information
+exit      Exit sub menu
+help      Show help for commands within this menu
+
+Command Category firewall - Control and display Firewall and NAT data
+ips_list         Manage Firewall IPs list
+restart          Stop and start Firewall & NAT
+start            Start Firewall & NAT
+stop             Stop Firewall & NAT
+filter           Turn Firewall packet inspection on/off
+mac_cache_dump   Dump MAC cache data
+dump             Display Firewall data
+variable         Display variables of the firewall rules
+trace            Trace packet traversal via the Firewall ruleset
+fastpath         Turns firewall fastpath feature on/off (default is on)
+exit             Exit sub menu
+help             Show help for commands within this menu
+
+Command Category connection - API for managing connections
+pppoe      Configure pppoe interface
+l2tp_vpn   Configure l2tpc interface
+pptp_vpn   Configure pptpc interface
+pppoa      Configure pppoa interface
+vlan       Configure vlan interface
+exit       Exit sub menu
+help       Show help for commands within this menu
+
+Command Category inet_connection - API for managing internet connections
+pppoe   Configure pppoe internet connection
+l2tp    Configure l2tpc internet connection
+pptp    Configure pptpc internet connection
+pppoa   Configure pppoa internet connection
+ether   Configure ethernet internet connection
+exit    Exit sub menu
+help    Show help for commands within this menu
+
+Command Category listener - Listener related commands
+register     Register CLI listener for NS
+unregister   Unregister CLI listener for NS
+notify       Send notify events to listeners (without payload)
+exit         Exit sub menu
+help         Show help for commands within this menu
+
+Command Category dsl_cmd - xDSL command for debug
+status                 show the xDSL status
+rates                  show the upload/download rates
+psd                    show the power spectral density
+atuc_phy_info          show ATU-C serial number, vendor ID, version number, etc
+atur_phy_info          show ATU-R serial number, vendor ID, version number, etc
+atuc_chan_info         show ATU-C channel information
+atur_chan_info         show ATU-R channel information
+atuc_intvl_info        show ATU-C interval information
+atur_intvl_info        show ATU-R interval information
+atuc_chan_intvl_info   show ATU-C channel interval information
+atur_chan_intvl_info   show ATU-R channel interval information
+line_alarm_conf_prof   show line alarm configuration profile
+print_all              show all the parameters and information about the DSL
+print                  show some common parameters and information about the DSL
+test_mode              enable ADSL test modes: Reverb Mode, Medley Mode or 
+                       Quiet Mode
+loop_diagnostics       start a DELT loop diagnostics
+exit                   Exit sub menu
+help                   Show help for commands within this menu
+
+Command Category buttons - Button management
+test_mode   Set button test mode
+exit        Exit sub menu
+help        Show help for commands within this menu
+
+Command Category bluetooth - Bluetooth command for MP264
+read_pskey           Read PS key in Bluetooth chip.
+write_pskey          Write PS key in Bluetooth chip.
+pcm_loop             PCM loop test
+crystal_trim         Crystal Trim
+crystal_write_trim   Crystal Write Trim
+tx_on                TX test
+rx_on                RX test
+dut                  Enable device under test mode
+pause                Pause the current test and stop any radio activity
+test_mode            Enter test mode
+unpair               unpair paired device(s)
+exit                 Exit sub menu
+help                 Show help for commands within this menu
+
+Command Category dect - dect module command line for testing
+test                       test dect moudle application
+create_DB                  create dect call list data base
+print_HS                   print list of registered HS in the base
+print_call_status          print list of call status
+upgrade                    upgrade DECT base fw
+time_update                sends NTP time update sync commnad to DECT module
+delete_HS                  delete all registered HS from base
+save_settings_in_factory   Saves unique DECT base settings in factory settings
+print_Channel              print list of DSP channel Table of DECT
+reboot                     sends reboot commnad to DECT module
+BT_call_establish          establish a call to the BT line
+BT_remote_disconnect       remote disconnect of BT call
+exit                       Exit sub menu
+help                       Show help for commands within this menu
+
+Command Category rtp_cmd - RTP debug commands
+transfer_call   transfer call from source extension A to destination extension B
+exit            Exit sub menu
+help            Show help for commands within this menu
+
+Command Category redundant_proxy_cmd - redundant proxy feature command line for debug
+switch_registrar   switch the sip registrar to primary/redundant
+exit               Exit sub menu
+help               Show help for commands within this menu
+
+Command Category leds - leds commands category
+set    Set a specific led on/off/blink
+exit   Exit sub menu
+help   Show help for commands within this menu
+
+Command Category slic_dsp_cmd - SLIC and DSP commands (read/write/dump SLIC registers, activate dsp commands)
+mpi_write                Write into an MPI register
+mpi_usermode_write       Write (usermode) into an MPI register
+mpi_read                 Read from an MPI register
+mpi_usermode_read        Read (usermode) from an MPI register
+dump_slic_slac_regs      Dump SLIC or SLAC registers
+dsp_cmd                  send DSP commands
+slic_calibration_start   Reboots the system and pefrorms calibration of the 
+                         SLIC after the reboot
+exit                     Exit sub menu
+help                     Show help for commands within this menu
+
+Command Category wireless - Wireless commands
+security                    Wireless security commands
+ssid                        Wireless SSID commands
+captive                     Wireless captive commands
+get_main                    Get the main (i.e. physical) wireless device name
+get_default_password        Get the default global wireless password 
+                            (unobscured)
+global_password_supported   Does this board support global WL password
+channels                    Show channels supported by a given wireless device
+set_log_level               Set log level for wireless driver
+exit                        Exit sub menu
+help                        Show help for commands within this menu
+
+Command Category misc - API for miscellaneous tasks
+disks             Print all connected disks and partitions
+lpq               Display print server status
+lpd_spool_info    Display printer spool diagnostics
+print_ram         print ram consumption for each process
+vlan_add          Add VLAN interface
+serial            Serial connection commands
+top               Profiling over event loop and estream
+knet_hooks_dump   Dump to console which knet_hooks run on each device
+exit              Exit sub menu
+help              Show help for commands within this menu
+
+Command Category firmware_update - Firmware update commands
+start    Start remote upgrade
+cancel   Kill running remote upgrade
+exit     Exit sub menu
+help     Show help for commands within this menu
+
+Command Category conf_upgrade - Configuration update commands
+start   Remotely upgrade configution for MP264
+save    Remotely download configution for MP264
+exit    Exit sub menu
+help    Show help for commands within this menu
+
+Command Category log - Controls logging behavior
+filter       Controls the CLI session logging behavior
+print        Print the contents of a given syslog buffer to the console
+clear        Clear the contents of a given syslog buffer
+statistics   Manage statistics
+exit         Exit sub menu
+help         Show help for commands within this menu
+
+Command Category dev - Device related commands
+vdsl              VDSL commands
+adsl              ADSL commands
+vr9_hw_switch     VR9 hardware switch debugging commands
+mii_reg_get       Get Ethernet MII register value
+mii_reg_set       Set Ethernet MII register value
+mii_phy_reg_get   Get Ethernet MII register value
+mii_phy_reg_set   Set Ethernet MII register value
+stats             Print device statistics
+ioctl_print       Print dev_if ioctl result
+exit              Exit sub menu
+help              Show help for commands within this menu
+
+Command Category kernel - Kernel related commands
+sys_ioctl      issue gateway ioctl
+meminfo        Print memory information
+top            Print processes memory usage
+cpu_load_on    Periodically shows cpu usage.
+cpu_load_off   Stop showing cpu usage (triggered by cpu_load_on).
+cpu_load_avg   Shows average cpu usage of last 1, 5 and 15 minutes. 
+exit           Exit sub menu
+help           Show help for commands within this menu
+
+Command Category system - Commands to control execution
+die                        Exit the gateway application and return ret
+ps                         Print open entities
+entity_close               Close an entity
+etask_list_dump            Dump back trace of all etasks
+restore_factory_settings   Restore factory configuration
+reboot                     Reboot the system
+delayed_reboot             Reboot the system asynchronously
+ver                        Display version information
+print_config               Print compilation configuration. Search for option 
+                           if specified
+exec                       Execute program
+cat                        Print file contents to console
+shell                      Spawn busybox shell in foreground
+date                       Print the current UTC and local time
+echo                       Echo arguments to console
+exit                       Exit sub menu
+help                       Show help for commands within this menu
+
+Command Category flash - Flash and loader related commands
+commit              Save configuration to flash
+erase               Erase a given section in the flash
+load                Load and burn image
+boot                Boot the system
+bset                Configure bootloader
+layout              Print the flash layout and content
+dump                Dump the flash content
+cramfs_location     Print the cramfs (mainfs, actually) location
+active_image_name   Print the name of the active image
+lock                Lock mtd region
+unlock              Unlock mtd region
+exit                Exit sub menu
+help                Show help for commands within this menu
+
+Command Category net - Network related commands
+igmp              IGMP Proxy related commands
+host              Resolve host by name
+protected_setup   Network related commands
+ifconfig          Configure network interface
+ping              send ping command
+telnet            Telnet client
+connection_type   connection type diagnostic commands
+rg_ifconfig       List network devices
+route             Print route table
+route_find        Find route entry
+main_wan          Print the name of the current main wan device
+voip_dev          Print the name of the preferred voip device
+cwmp_dev          Print the name of the preferred cwmp device
+intercept_state   Print interception state
+client_info_get   Get client info
+exit              Exit sub menu
+help              Show help for commands within this menu
+
+Command Category cmd - Commands related to the Command module
+exit   Exit from the current CLI session
+help   Show help for commands within this menu
