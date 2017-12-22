@@ -1,0 +1,3533 @@
+/:
+bin   dev   etc   home  lib   mnt   proc  sys   tmp   usr   var
+
+/bin:
+LA_DB                   jdd                     rmmod
+_pluto_adns             kill                    route
+ac_fwapp                killall                 rsasigkey
+arp                     klipsdebug              sfdisk
+badblocks               l2tpd                   sh
+busybox                 lash                    smbclient
+cat                     ln                      smbcp
+chgrp                   losetup                 smbd
+chmod                   ls                      sort
+chown                   lsmod                   spi
+comgt                   mdadm                   spigrp
+cp                      mkdir                   star
+dd                      mkdosfs                 stty
+df                      mke2fs                  swapoff
+disktype                mknod                   swapon
+dms_smm                 mkntfs                  sync
+dosfsck                 mkswap                  sysctl
+dsl_cpe_control         mount                   tcpdump
+e2fsck                  mtdinfo                 telnet
+echo                    mv                      tftp
+eroute                  nanddump                tncfg
+flash_erase             nandtest                top
+flash_eraseall          nandwrite               traceroute
+flash_info              nmbd                    ubiattach
+flashcp                 ntfs-3g                 ubicrc32
+free                    ntfsfix                 ubidetach
+ifconfig                oamd                    ubiformat
+ifrename                openrg                  ubimkvol
+init                    permst_burn             ubinfo
+insmod                  ping                    ubirename
+iperf                   pkcs_request            ubirmvol
+iwconfig                pluto                   ubirsvol
+iwevent                 ps                      ubiupdatevol
+iwgetid                 puresight_proxy_server  umount
+iwlist                  ranbits                 uptime
+iwpriv                  rm                      voip_task
+iwspy                   rmdir
+
+/dev:
+ac494_dsp          sdaa9              sdi11              sdu15
+ac494_slic0        sdab               sdi12              sdu2
+ac494_slic1        sdab1              sdi13              sdu3
+chardev            sdab10             sdi14              sdu4
+cnxtfxs0           sdab11             sdi15              sdu5
+cnxtfxs1           sdab12             sdi2               sdu6
+cnxtvoiceaudio     sdab13             sdi3               sdu7
+cnxtvoicesignal    sdab14             sdi4               sdu8
+console            sdab15             sdi5               sdu9
+cua0               sdab2              sdi6               sdv
+dect_drv           sdab3              sdi7               sdv1
+dsl_cpe_api        sdab4              sdi8               sdv10
+fb0                sdab5              sdi9               sdv11
+fb0H1440           sdab6              sdj                sdv12
+fb1                sdab7              sdj1               sdv13
+fb2                sdab8              sdj10              sdv14
+fb3                sdab9              sdj11              sdv15
+fd0                sdac               sdj12              sdv2
+full               sdac1              sdj13              sdv3
+hda                sdac10             sdj14              sdv4
+hda1               sdac11             sdj15              sdv5
+hda2               sdac12             sdj2               sdv6
+hda3               sdac13             sdj3               sdv7
+hda4               sdac14             sdj4               sdv8
+hda5               sdac15             sdj5               sdv9
+hda6               sdac2              sdj6               sdw
+hda7               sdac3              sdj7               sdw1
+hda8               sdac4              sdj8               sdw10
+hdb                sdac5              sdj9               sdw11
+hdb1               sdac6              sdk                sdw12
+hdb2               sdac7              sdk1               sdw13
+hdb3               sdac8              sdk10              sdw14
+hdb4               sdac9              sdk11              sdw15
+hdb5               sdad               sdk12              sdw2
+hdb6               sdad1              sdk13              sdw3
+hdb7               sdad10             sdk14              sdw4
+hdb8               sdad11             sdk15              sdw5
+hdc                sdad12             sdk2               sdw6
+hdc1               sdad13             sdk3               sdw7
+hdc2               sdad14             sdk4               sdw8
+hdc3               sdad15             sdk5               sdw9
+hdc4               sdad2              sdk6               sdx
+hdc5               sdad3              sdk7               sdx1
+hdc6               sdad4              sdk8               sdx10
+hdc7               sdad5              sdk9               sdx11
+hdc8               sdad6              sdl                sdx12
+hdd                sdad7              sdl1               sdx13
+hdd1               sdad8              sdl10              sdx14
+hdd2               sdad9              sdl11              sdx15
+hdd3               sdae               sdl12              sdx2
+hdd4               sdae1              sdl13              sdx3
+hdd5               sdae10             sdl14              sdx4
+hdd6               sdae11             sdl15              sdx5
+hdd7               sdae12             sdl2               sdx6
+hdd8               sdae13             sdl3               sdx7
+ifx_gpio           sdae14             sdl4               sdx8
+ifx_mei            sdae15             sdl5               sdx9
+kmem               sdae2              sdl6               sdy
+log                sdae3              sdl7               sdy1
+loop0              sdae4              sdl8               sdy10
+loop1              sdae5              sdl9               sdy11
+loop2              sdae6              sdm                sdy12
+md0                sdae7              sdm1               sdy13
+md1                sdae8              sdm10              sdy14
+mei_cpe            sdae9              sdm11              sdy15
+mem                sdaf               sdm12              sdy2
+mtd0               sdaf1              sdm13              sdy3
+mtd1               sdaf10             sdm14              sdy4
+mtd2               sdaf11             sdm15              sdy5
+mtd3               sdaf12             sdm2               sdy6
+mtd4               sdaf13             sdm3               sdy7
+mtd5               sdaf14             sdm4               sdy8
+mtd6               sdaf15             sdm5               sdy9
+mtd7               sdaf2              sdm6               sdz
+mtdblock0          sdaf3              sdm7               sdz1
+mtdblock1          sdaf4              sdm8               sdz10
+mtdblock2          sdaf5              sdm9               sdz11
+mtdblock3          sdaf6              sdn                sdz12
+mtdblock4          sdaf7              sdn1               sdz13
+mtdblock5          sdaf8              sdn10              sdz14
+mtdblock6          sdaf9              sdn11              sdz15
+mtdblock7          sdb                sdn12              sdz2
+mtdr0              sdb1               sdn13              sdz3
+mtdr1              sdb10              sdn14              sdz4
+mtdr2              sdb11              sdn15              sdz5
+mtdr3              sdb12              sdn2               sdz6
+mtdr4              sdb13              sdn3               sdz7
+mtdr5              sdb14              sdn4               sdz8
+mtdr6              sdb15              sdn5               sdz9
+mtdr7              sdb2               sdn6               switch_api
+null               sdb3               sdn7               tpanel
+nvram              sdb4               sdn8               tty
+openrg.hw_buttons  sdb5               sdn9               tty0
+port               sdb6               sdo                tty1
+ptyp0              sdb7               sdo1               tty2
+ptyp1              sdb8               sdo10              tty3
+ptyp2              sdb9               sdo11              tty4
+ptyp3              sdc                sdo12              tty5
+ptyp4              sdc1               sdo13              tty6
+ptyp5              sdc10              sdo14              tty7
+ptyp6              sdc11              sdo15              tty8
+ptyp7              sdc12              sdo2               ttyS0
+ptyp8              sdc13              sdo3               ttyS1
+ptyp9              sdc14              sdo4               ttyUSB0
+ptypa              sdc15              sdo5               ttyUSB1
+ptypb              sdc2               sdo6               ttyUSB2
+ptypc              sdc3               sdo7               ttyUSB3
+ptypd              sdc4               sdo8               ttyUSB4
+ptype              sdc5               sdo9               ttyUSB5
+ptypf              sdc6               sdp                ttyUSB6
+ptyq0              sdc7               sdp1               ttyUSB7
+ptyq1              sdc8               sdp10              ttyUSB8
+ptyq2              sdc9               sdp11              ttyUSB9
+ptyq3              sdd                sdp12              ttyUSIF
+ptyq4              sdd1               sdp13              ttyp0
+ptyq5              sdd10              sdp14              ttyp1
+ptyq6              sdd11              sdp15              ttyp2
+ptyq7              sdd12              sdp2               ttyp3
+ptyq8              sdd13              sdp3               ttyp4
+ptyq9              sdd14              sdp4               ttyp5
+ptyqa              sdd15              sdp5               ttyp6
+ptyqb              sdd2               sdp6               ttyp7
+ptyqc              sdd3               sdp7               ttyp8
+ptyqd              sdd4               sdp8               ttyp9
+ptyqe              sdd5               sdp9               ttypa
+ptyqf              sdd6               sdq                ttypb
+ptyr0              sdd7               sdq1               ttypc
+ptyr1              sdd8               sdq10              ttypd
+ptyr2              sdd9               sdq11              ttype
+ptyr3              sde                sdq12              ttypf
+ptyr4              sde1               sdq13              ttyq0
+ptyr5              sde10              sdq14              ttyq1
+ptyr6              sde11              sdq15              ttyq2
+ptyr7              sde12              sdq2               ttyq3
+ptyr8              sde13              sdq3               ttyq4
+ptyr9              sde14              sdq4               ttyq5
+ptyra              sde15              sdq5               ttyq6
+ptyrb              sde2               sdq6               ttyq7
+ptyrc              sde3               sdq7               ttyq8
+ptyrd              sde4               sdq8               ttyq9
+ptyre              sde5               sdq9               ttyqa
+ptyrf              sde6               sdr                ttyqb
+ptys0              sde7               sdr1               ttyqc
+ptys1              sde8               sdr10              ttyqd
+ptys2              sde9               sdr11              ttyqe
+ptys3              sdf                sdr12              ttyqf
+ptys4              sdf1               sdr13              ttyr0
+ptys5              sdf10              sdr14              ttyr1
+ptys6              sdf11              sdr15              ttyr2
+ptys7              sdf12              sdr2               ttyr3
+ptys8              sdf13              sdr3               ttyr4
+ptys9              sdf14              sdr4               ttyr5
+ptysa              sdf15              sdr5               ttyr6
+ptysb              sdf2               sdr6               ttyr7
+ptysc              sdf3               sdr7               ttyr8
+ptysd              sdf4               sdr8               ttyr9
+ptyse              sdf5               sdr9               ttyra
+ptysf              sdf6               sds                ttyrb
+ram0               sdf7               sds1               ttyrc
+ram1               sdf8               sds10              ttyrd
+ram2               sdf9               sds11              ttyre
+ram3               sdg                sds12              ttyrf
+random             sdg1               sds13              ttys0
+rg_chrdev          sdg10              sds14              ttys1
+rtc                sdg11              sds15              ttys2
+sda                sdg12              sds2               ttys3
+sda1               sdg13              sds3               ttys4
+sda10              sdg14              sds4               ttys5
+sda11              sdg15              sds5               ttys6
+sda12              sdg2               sds6               ttys7
+sda13              sdg3               sds7               ttys8
+sda14              sdg4               sds8               ttys9
+sda15              sdg5               sds9               ttysa
+sda2               sdg6               sdt                ttysb
+sda3               sdg7               sdt1               ttysc
+sda4               sdg8               sdt10              ttysd
+sda5               sdg9               sdt11              ttyse
+sda6               sdh                sdt12              ttysf
+sda7               sdh1               sdt13              ubi_ctrl
+sda8               sdh10              sdt14              urandom
+sda9               sdh11              sdt15              usblp0
+sdaa               sdh12              sdt2               usblp1
+sdaa1              sdh13              sdt3               usblp2
+sdaa10             sdh14              sdt4               usblp3
+sdaa11             sdh15              sdt5               usblp4
+sdaa12             sdh2               sdt6               usblp5
+sdaa13             sdh3               sdt7               usblp6
+sdaa14             sdh4               sdt8               usblp7
+sdaa15             sdh5               sdt9               usblp8
+sdaa2              sdh6               sdu                usblp9
+sdaa3              sdh7               sdu1               video0
+sdaa4              sdh8               sdu10              vscisdn
+sdaa5              sdh9               sdu11              vsctdm
+sdaa6              sdi                sdu12              zero
+sdaa7              sdi1               sdu13
+sdaa8              sdi10              sdu14
+
+/dev/dsl_cpe_api:
+0
+
+/dev/mei_cpe:
+0       cntrl0
+
+/dev/switch_api:
+0  1
+
+/etc:
+ADSL_cable_nb.pcm              comgt
+ADSL_line_nb.pcm               fstab
+Authentication_error_nb.pcm    group
+Bad_Internet_nb.pcm            hosts
+Check_user_nb.pcm              ipsec.d
+External_cable_nb.pcm          nsswitch.conf
+External_modem_nb.pcm          packetsmart
+No_Internet_nb.pcm             passwd
+No_VoIP_nb.pcm                 protocols
+RT3062.dat                     rerun
+Service_not_configured_nb.pcm  resolv.conf
+TZ                             secrets.tdb
+V1MOD_SPI_app.bin              services
+VDSL_cable_nb.pcm              smb.conf
+VDSL_line_nb.pcm               smbpasswd
+ac_fw.fwb                      xcpe_hw_vr9_a.bin
+
+/etc/comgt:
+connect_script
+
+/etc/ipsec.d:
+cacerts  private
+
+/etc/ipsec.d/cacerts:
+
+/etc/ipsec.d/private:
+
+/etc/packetsmart:
+psmart.env
+
+/lib:
+ld-uClibc-0.9.29.so     libgmp.so.2             libresolv.so
+ld-uClibc.so            libgmp.so.2.0.2         libresolv.so.0
+ld-uClibc.so.0          libiw.so                librg_config.so
+libLiteBase.so          libjpeg.so              librt-0.9.29.so
+libLiteOCSP.so          libjutil.so             librt.so
+libbcsm.so              libm-0.9.29.so          librt.so.0
+libc.so.0               libm.so                 libssl.so
+libcrypt-0.9.29.so      libm.so.0               libthread_db-0.9.29.so
+libcrypt.so             libnsl-0.9.29.so        libthread_db.so
+libcrypt.so.0           libnsl.so               libthread_db.so.1
+libcrypto.so            libnsl.so.0             libuClibc++.so
+libdl-0.9.29.so         libntfs-3g.so           libuClibc-0.9.29.so
+libdl.so                libopenrg.so            libutil-0.9.29.so
+libdl.so.0              libopenrg_gpl.so        libutil.so
+libevent.so             libpthread-0.9.29.so    libutil.so.0
+libexpat.so             libpthread.so           modules
+libfreeswan.so          libpthread.so.0
+libfuse-lite.so         libresolv-0.9.29.so
+
+/lib/modules:
+ac494_mod.o                    ipsec_md5.o
+ac49x_dsp_mod.o                ipsec_null.o
+be_pppoa_mod.o                 ipsec_sha1.o
+be_pppos_mod.o                 kleds_mod.o
+btn.o                          log_chardev.o
+cdc_ether.o                    nb_rt.o
+cdc_ncm.o                      one_module.o
+dect_drv_mod.o                 phone_mod.o
+drv_dsl_cpe_api_mod.o          pppoe_relay.o
+drv_ifxos_mod.o                qos_ingress.o
+fastpath_plat_ppa_mod.o        rg_ipsec.o
+ifxmips_ppa_datapath_a5_mod.o  rg_ipv4.o
+ifxmips_ppa_datapath_d5_mod.o  rg_klog.o
+ifxmips_ppa_datapath_e5_mod.o  rg_klog_chardev.o
+ifxmips_ppa_hal_a5_mod.o       rg_klog_ram_be.o
+ifxmips_ppa_hal_d5_mod.o       rg_pppoe_relay.o
+ifxmips_ppa_hal_e5_mod.o       rg_usfs.o
+ifxmips_usif_uart_mod.o        rndis_host.o
+ifxusb_driver_mod.o            rt3062.o
+igmp_proxy_mod.o               rtp.o
+ipsec_1des.o                   silabs_fxs_3226_drv_mod.o
+ipsec_3des.o                   tcp_mss.o
+ipsec_aes.o                    watchdog_mod.o
+
+/mnt:
+cramfs  data    dlmfs   flash   fs      modfs
+
+/mnt/cramfs:
+bin   etc   home  lib   usr
+
+/mnt/cramfs/bin:
+_pluto_adns             iwpriv                  ranbits
+ac_fwapp                iwspy                   rsasigkey
+arp                     jdd                     sfdisk
+badblocks               klipsdebug              smbclient
+busybox                 l2tpd                   smbd
+comgt                   mdadm                   spi
+disktype                mkdosfs                 spigrp
+dms_smm                 mke2fs                  star
+dosfsck                 mkntfs                  tcpdump
+dsl_cpe_control         mtdinfo                 tncfg
+e2fsck                  nanddump                traceroute
+eroute                  nandtest                ubiattach
+flash_erase             nandwrite               ubicrc32
+flash_eraseall          nmbd                    ubidetach
+flash_info              ntfs-3g                 ubiformat
+flashcp                 ntfsfix                 ubimkvol
+ifrename                oamd                    ubinfo
+init                    openrg                  ubirename
+iperf                   permst_burn             ubirmvol
+iwconfig                ping                    ubirsvol
+iwevent                 pkcs_request            ubiupdatevol
+iwgetid                 pluto                   voip_task
+iwlist                  puresight_proxy_server
+
+/mnt/cramfs/etc:
+ADSL_cable_nb.pcm              VDSL_cable_nb.pcm
+ADSL_line_nb.pcm               VDSL_line_nb.pcm
+Authentication_error_nb.pcm    ac_fw.fwb
+Bad_Internet_nb.pcm            comgt
+Check_user_nb.pcm              hosts
+External_cable_nb.pcm          nsswitch.conf
+External_modem_nb.pcm          packetsmart
+No_Internet_nb.pcm             protocols
+No_VoIP_nb.pcm                 resolv.conf
+Service_not_configured_nb.pcm  services
+V1MOD_SPI_app.bin              xcpe_hw_vr9_a.bin
+
+/mnt/cramfs/etc/comgt:
+connect_script
+
+/mnt/cramfs/etc/packetsmart:
+psmart.env
+
+/mnt/cramfs/home:
+httpd
+
+/mnt/cramfs/home/httpd:
+html
+
+/mnt/cramfs/home/httpd/html:
+adsl_cable_disconnected.htm            http_transfer.cgi
+bad_adsl_cable.htm                     http_upload.cgi
+bad_vdsl_cable.htm                     images
+ethernet_cable_disconnected.htm        internet_auth_error.htm
+external_modem_disconnected.htm        md5.js
+external_modem_disconnected_flash.htm  vdsl_cable_disconnected.htm
+http_download.cgi
+
+/mnt/cramfs/home/httpd/html/images:
+012-disconnected.html               page_remote_admin.png
+012-smile-not-connected.gif         page_route.png
+ISPONE_apply.png                    page_scheduler.png
+ISPONE_bottom_logo.gif              page_security.gif
+ISPONE_butt_center.gif              page_services.png
+ISPONE_butt_left.gif                page_sitemap.png
+ISPONE_butt_right.gif               page_system.png
+ISPONE_cancel.png                   page_system_settings.png
+ISPONE_empty.gif                    page_upgrade.png
+ISPONE_ok.png                       page_upnp.png
+ISPONE_refresh.png                  page_usb.png
+ISPONE_sidebar_bullet.gif           page_usb16.png
+ISPONE_top_center.gif               page_users.png
+ISPONE_top_left.gif                 page_vpn.png
+ISPONE_top_right_252_wdnb.gif       page_vpn16.png
+MP_PV_top_right.gif                 page_vpn_gray.png
+MP_bottom_logo.gif                  page_web_filtering.png
+MP_butt_center.gif                  page_web_filtering_gray.png
+MP_butt_left.gif                    page_wl.png
+MP_butt_right.gif                   page_wl16.png
+MP_sidebar_bullet.gif               phones16.png
+MP_top_center.gif                   plus.gif
+MP_top_left.gif                     primus_bottom_logo.gif
+MP_top_right.gif                    primus_quick_setup.png
+MP_top_right_262.gif                primus_top_center.gif
+MP_top_right_262_db.gif             primus_top_left.gif
+MP_top_right_264.gif                primus_top_right_261R.gif
+MP_top_right_264_db.gif             primus_top_right_262.gif
+MP_top_right_272.gif                primus_top_right_262DB.gif
+MP_top_right_272_db.gif             primus_top_right_263.gif
+MT_bottom_left.gif                  primus_top_right_263DB.gif
+MT_center.gif                       primus_top_right_264.gif
+MT_left.gif                         primus_top_right_264DB.gif
+MT_sidebar_bullet.gif               primus_top_right_272.gif
+NOVA_top_left.gif                   primus_top_right_272DB.gif
+NU_top_center.gif                   printers.png
+NU_top_left.gif                     printers16.png
+ROS_top_left.gif                    progress_bar.gif
+TAT_top_left.gif                    progress_bar_empty.gif
+Telefonica_top_left.gif             questionmark.png
+Telekom_Serbija_top_center.gif      reboot16.png
+Telekom_Serbija_top_left.gif        refresh.png
+Telekom_Serbija_top_right_262.gif   regional_settings.png
+Wxc_top_left.gif                    regional_settings_gray.png
+access.gif                          rg_apply.png
+access.jpg                          rg_box.png
+add.png                             rg_box16.png
+adsl.jpg                            rg_box_map.png
+adsl_primus.jpg                     rg_button_bot_left.png
+apply.gif                           rg_button_bot_left_mo.png
+arr_down.png                        rg_button_bot_right.png
+arr_left.png                        rg_button_bot_right_mo.png
+arr_right.png                       rg_button_center.png
+arr_up.png                          rg_button_center_mo.png
+attention.png                       rg_button_mid_left.png
+auth_wl.png                         rg_button_mid_left_mo.png
+beeline_top_left.gif                rg_button_mid_right.png
+bluetooth_idle.png                  rg_button_mid_right_mo.png
+border_left.gif                     rg_button_top_left.png
+border_left_1.gif                   rg_button_top_left_mo.png
+border_left_2.gif                   rg_button_top_right.png
+border_lower_1.gif                  rg_button_top_right_mo.png
+border_lower_2.gif                  rg_cancel.png
+border_lower_3.gif                  rg_close.png
+border_lower_3_off.gif              rg_frame1_bot_left.png
+border_mid.gif                      rg_frame1_bot_right.png
+border_right.gif                    rg_frame1_center.png
+border_right_1.gif                  rg_frame1_center_cont.png
+border_upper.gif                    rg_frame1_center_empty.png
+border_upper_1.gif                  rg_frame1_center_empty_cont.png
+border_upper_3.gif                  rg_frame1_middle_left.png
+border_upper_4_1.gif                rg_frame1_middle_left_empty.png
+border_upper_4_2.gif                rg_frame1_middle_right.png
+border_upper_5_bottom.gif           rg_frame1_middle_right_empty.png
+border_upper_5_middle.gif           rg_frame1_top_left.png
+border_upper_5_top.gif              rg_frame1_top_left_cont.png
+bullet_number_1.png                 rg_frame1_top_left_empty.png
+bullet_number_2.png                 rg_frame1_top_left_empty_cont.png
+bullet_number_3.png                 rg_frame1_top_right.png
+bullet_number_4.png                 rg_frame1_top_right_cont.png
+butt_center.gif                     rg_frame1_top_right_empty.png
+butt_left.gif                       rg_frame1_top_right_empty_cont.png
+butt_right.gif                      rg_frame2_bot_center.png
+cancel.gif                          rg_frame2_bot_center_next.png
+close.gif                           rg_frame2_bot_left.png
+cog_wheel.png                       rg_frame2_bot_left_next.png
+conn-wire-left.png                  rg_frame2_bot_right.png
+conn_wireless.png                   rg_frame2_bot_right_next.png
+conn_wireless_0.gif                 rg_frame2_middle_left.png
+conn_wireless_1.gif                 rg_frame2_middle_right.png
+conn_wireless_2.gif                 rg_logo.png
+conn_wireless_3.gif                 rg_ok.png
+conn_wireless_4.gif                 rg_refresh.png
+conn_wireless_5.gif                 rg_start.png
+connected16.png                     rg_stop.png
+delete.png                          rg_tab1_bot_left_mo.png
+delimiter.png                       rg_tab1_bot_left_norm.png
+disconn_wireless.png                rg_tab1_bot_left_sel.png
+disconnected16.png                  rg_tab1_bot_left_sel_end.png
+dodo_bottom_logo.gif                rg_tab1_bot_right_mo.png
+dodo_top_left.gif                   rg_tab1_bot_right_norm.png
+dodo_top_right_264.gif              rg_tab1_bot_right_sel.png
+dots.gif                            rg_tab1_bot_right_sel_end.png
+download.png                        rg_tab1_center_mo.png
+edit.png                            rg_tab1_center_norm.png
+empty.gif                           rg_tab1_center_sel.png
+error.png                           rg_tab1_middle_left_mo.png
+error_inline.png                    rg_tab1_middle_left_norm.png
+error_inline_old.png                rg_tab1_middle_left_sel.png
+error_old.png                       rg_tab1_middle_left_sel_end.png
+eth_wan.jpg                         rg_tab1_middle_right_mo.png
+eth_wan_primus.jpg                  rg_tab1_middle_right_norm.png
+exclamationmark.png                 rg_tab1_middle_right_sel.png
+external.gif                        rg_tab1_middle_right_sel_end.png
+external.jpg                        rg_tab1_spacing.png
+failure.png                         rg_tab1_top_left_mo.png
+favicon.ico                         rg_tab1_top_left_norm.png
+flash_demo.swf                      rg_tab1_top_left_sel.png
+fw-hi.png                           rg_tab1_top_left_sel_end.png
+fw-low.png                          rg_tab1_top_right_mo.png
+fw-mid.png                          rg_tab1_top_right_norm.png
+globe.png                           rg_tab1_top_right_sel.png
+gray_triangle.png                   rg_tab1_top_right_sel_end.png
+hand.png                            rg_tab2_bot_left.png
+handset_idle.png                    rg_tab2_bot_right.png
+handset_out_of_range.png            rg_tab2_center.png
+handset_talking.png                 rg_tab2_middle_left.png
+harddrives.png                      rg_tab2_middle_right.png
+help16.png                          rg_tab2_top_left.png
+home16.png                          rg_tab2_top_right.png
+host.png                            rg_tab4_bot_left.png
+host_16.png                         rg_tab4_bot_left_end.png
+host_empty.png                      rg_tab4_bot_left_sel.png
+host_many.png                       rg_tab4_bot_left_sel_end.png
+hourglass.png                       rg_tab4_bot_right.png
+iPrimus.gif                         rg_tab4_bot_right_end.png
+internet_connection16.png           rg_tab4_bot_right_sel.png
+jungo_logo.png                      rg_tab4_bot_right_sel_end.png
+line-color.gif                      rg_tab4_center.png
+line-discnnt-bottom.png             rg_tab4_center_sel.png
+line-discnnt-top.png                rg_tab4_middle_left.png
+local_network16.png                 rg_tab4_middle_left_end.png
+logout16.png                        rg_tab4_middle_left_sel.png
+m2_bottom_no_logo.gif               rg_tab4_middle_left_sel_end.png
+m2_top_left.gif                     rg_tab4_middle_right.png
+megafon_top_left.gif                rg_tab4_middle_right_end.png
+minus.gif                           rg_tab4_middle_right_sel.png
+movistar.gif                        rg_tab4_middle_right_sel_end.png
+msg_frame_bot_center.png            rg_tab4_top_left.png
+msg_frame_bot_center_bad.png        rg_tab4_top_left_end.png
+msg_frame_bot_center_note.png       rg_tab4_top_left_sel.png
+msg_frame_bot_center_tip.png        rg_tab4_top_left_sel_end.png
+msg_frame_bot_left.png              rg_tab4_top_right.png
+msg_frame_bot_left_bad.png          rg_tab4_top_right_end.png
+msg_frame_bot_left_note.png         rg_tab4_top_right_sel.png
+msg_frame_bot_left_tip.png          rg_tab4_top_right_sel_end.png
+msg_frame_bot_right.png             rg_table_button_center.png
+msg_frame_bot_right_bad.png         rg_table_button_center_mo.png
+msg_frame_bot_right_note.png        rg_table_button_mid_left.png
+msg_frame_bot_right_tip.png         rg_table_button_mid_left_mo.png
+msg_frame_middle_center_note.png    rg_table_button_mid_right.png
+msg_frame_middle_center_tip.png     rg_table_button_mid_right_mo.png
+msg_frame_middle_left.png           rg_topbar_advanced.png
+msg_frame_middle_left_bad.png       rg_topbar_home.png
+msg_frame_middle_left_note.png      rg_topbar_internet_connection.png
+msg_frame_middle_left_tip.png       rg_topbar_local_network.png
+msg_frame_middle_right.png          rg_topbar_services.png
+msg_frame_middle_right_bad.png      services16.png
+msg_frame_middle_right_note.png     sidebar_advanced.gif
+msg_frame_middle_right_tip.png      sidebar_bg.gif
+msg_frame_top_center.png            sidebar_conns.gif
+msg_frame_top_center_bad.png        sidebar_home.gif
+msg_frame_top_center_note.png       sidebar_logout.gif
+msg_frame_top_center_tip.png        sidebar_monitoring.gif
+msg_frame_top_left.png              sidebar_qos.gif
+msg_frame_top_left_bad.png          sidebar_quick.gif
+msg_frame_top_left_note.png         sidebar_security.gif
+msg_frame_top_left_tip.png          sidebar_telephony.gif
+msg_frame_top_right.png             sidebar_web_filtering.gif
+msg_frame_top_right_bad.png         sitemap16.png
+msg_frame_top_right_note.png        smb_frame2_bot_center.png
+msg_frame_top_right_tip.png         smb_frame2_bot_right.png
+nav_left_bottom.gif                 smb_frame2_middle_left.png
+nav_left_middle.gif                 smb_frame2_middle_right.png
+nav_left_top.gif                    sort_ascending.png
+nav_middle_bottom.gif               sort_descending.png
+nav_middle_top.gif                  storage16.png
+nav_right_bottom.gif                success.png
+nav_right_middle.gif                success16.png
+nav_right_top.gif                   tab_left_1.gif
+notice.gif                          tab_left_2.gif
+notice.png                          tab_left_3.gif
+ok.gif                              tab_left_bg.gif
+openrg_logo.gif                     tab_left_sel_1.gif
+page_about.png                      tab_left_sel_2.gif
+page_admin_restart.png              tab_left_sel_3.gif
+page_admin_restore_defaults.png     tab_left_sel_bg.gif
+page_admin_set_time.png             tab_mid_1.gif
+page_advanced.png                   tab_mid_3.gif
+page_auto_upgrade.png               tab_mid_bg.gif
+page_backup.png                     tab_mid_sel_1.gif
+page_bluetooth.png                  tab_mid_sel_3.gif
+page_bridge.png                     tab_mid_sel_bg.gif
+page_bridge16.png                   tab_right_1.gif
+page_cert.png                       tab_right_2.gif
+page_conn.png                       tab_right_3.gif
+page_diag.png                       tab_right_bg.gif
+page_dmz.png                        tab_right_sel_1.gif
+page_dns.png                        tab_right_sel_2.gif
+page_dog.png                        tab_right_sel_3.gif
+page_dsl.png                        tab_right_sel_bg.gif
+page_dsl16.png                      tab_sep.gif
+page_eth.png                        tel_off_hook.png
+page_eth16.png                      tel_on_hook.png
+page_feature_key.png                test.png
+page_file_server.png                usb_drive.png
+page_file_server_gray.png           usb_stick.png
+page_home.png                       v.png
+page_installation_wizard.png        vdsl.jpg
+page_internet_connection.png        vdsl_primus.jpg
+page_local_network.png              vendor_customer01.gif
+page_local_servers.png              vendor_customer02.gif
+page_login.png                      vendor_customer03.gif
+page_mac.png                        vendor_customerND.gif
+page_man_upgrade.png                vendor_logo.gif
+page_media_server.png               view_empty.gif
+page_media_server_gray.png          view_empty_lit.gif
+page_monitoring.png                 view_list.gif
+page_network.png                    view_list_lit.gif
+page_new_conn.png                   view_map.gif
+page_packetsmart.png                view_map_lit.gif
+page_packetsmart_gray.png           waiting.gif
+page_printer.png                    warning.png
+page_printer_gray.png               wire_error.gif
+page_protocols.png                  wire_in_progress.gif
+page_qos.png                        wire_ok.gif
+page_quick_setup.png                wire_untested.gif
+
+/mnt/cramfs/lib:
+ld-uClibc-0.9.29.so     libfuse-lite.so         libpthread-0.9.29.so
+libLiteBase.so          libgmp.so.2.0.2         libresolv-0.9.29.so
+libLiteOCSP.so          libiw.so                librg_config.so
+libbcsm.so              libjpeg.so              librt-0.9.29.so
+libcrypt-0.9.29.so      libjutil.so             libssl.so
+libcrypto.so            libm-0.9.29.so          libthread_db-0.9.29.so
+libdl-0.9.29.so         libnsl-0.9.29.so        libuClibc++.so
+libevent.so             libntfs-3g.so           libuClibc-0.9.29.so
+libexpat.so             libopenrg.so            libutil-0.9.29.so
+libfreeswan.so          libopenrg_gpl.so        modules
+
+/mnt/cramfs/lib/modules:
+fastpath_plat_ppa_mod.o        ifxmips_ppa_hal_a5_mod.o
+ifxmips_ppa_datapath_a5_mod.o  ifxmips_ppa_hal_d5_mod.o
+ifxmips_ppa_datapath_d5_mod.o  ifxmips_ppa_hal_e5_mod.o
+ifxmips_ppa_datapath_e5_mod.o
+
+/mnt/cramfs/usr:
+local
+
+/mnt/cramfs/usr/local:
+psmart
+
+/mnt/cramfs/usr/local/psmart:
+bin  etc  lib
+
+/mnt/cramfs/usr/local/psmart/bin:
+bootstrap      callgen        envset         pktcap         snmphttpproxy
+buildinfo      envprint       getbits.sh     probe
+
+/mnt/cramfs/usr/local/psmart/etc:
+startproc.cfg
+
+/mnt/cramfs/usr/local/psmart/lib:
+libaxtls.so              libgcc_s.so.1            libosip2.so.6.2.0
+libaxtls.so.1            libortp.so               libosipparser2.so
+libaxtls.so.1.2          libortp.so.5             libosipparser2.so.6
+libcurl.so               libortp.so.5.0.0         libosipparser2.so.6.2.0
+libcurl.so.4             libosip2.so
+libcurl.so.4.2.0         libosip2.so.6
+
+/mnt/data:
+
+/mnt/dlmfs:
+
+/mnt/flash:
+
+/mnt/fs:
+
+/mnt/modfs:
+lib
+
+/mnt/modfs/lib:
+modules
+
+/mnt/modfs/lib/modules:
+ac494_mod.o                log_chardev.o
+ac49x_dsp_mod.o            nb_rt.o
+be_pppoa_mod.o             one_module.o
+be_pppos_mod.o             phone_mod.o
+btn.o                      pppoe_relay.o
+cdc_ether.o                qos_ingress.o
+cdc_ncm.o                  rg_ipsec.o
+dect_drv_mod.o             rg_ipv4.o
+drv_dsl_cpe_api_mod.o      rg_klog.o
+drv_ifxos_mod.o            rg_klog_chardev.o
+ifxmips_usif_uart_mod.o    rg_klog_ram_be.o
+ifxusb_driver_mod.o        rg_pppoe_relay.o
+igmp_proxy_mod.o           rg_usfs.o
+ipsec_1des.o               rndis_host.o
+ipsec_3des.o               rt3062.o
+ipsec_aes.o                rtp.o
+ipsec_md5.o                silabs_fxs_3226_drv_mod.o
+ipsec_null.o               tcp_mss.o
+ipsec_sha1.o               watchdog_mod.o
+kleds_mod.o
+
+/proc:
+1              23             buddyinfo      ioports        slabinfo
+10             3              bus            irq            stat
+11             4              cmdline        kmsg           swaps
+11918          5              cpuinfo        loadavg        sys
+12             6              crypto         locks          sysrq-trigger
+15             61             dcdc           mdstat         sysvipc
+15917          62             devices        meminfo        timer_list
+15990          7              diskstats      mips           tty
+15992          72             driver         misc           uptime
+16             77             eth            modules        vectoring
+160            78             execdomains    mounts         version
+161            8              filesystems    mtd            vmstat
+162            83             fs             net            zoneinfo
+163            84             ifx_wdt        partitions
+164            86             ifxusb_hcd     pmcu
+165            87             interrupts     rt3062
+2              9              iomem          self
+
+/proc/1:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/1/fd:
+
+/proc/1/task:
+1
+
+/proc/1/task/1:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/1/task/1/fd:
+
+/proc/10:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/10/fd:
+
+/proc/10/task:
+10
+
+/proc/10/task/10:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/10/task/10/fd:
+
+/proc/11:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/11/fd:
+
+/proc/11/task:
+11
+
+/proc/11/task/11:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/11/task/11/fd:
+
+/proc/11918:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/11918/fd:
+0  1  2  3
+
+/proc/11918/task:
+11918
+
+/proc/11918/task/11918:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/11918/task/11918/fd:
+0  1  2  3
+
+/proc/12:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/12/fd:
+
+/proc/12/task:
+12
+
+/proc/12/task/12:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/12/task/12/fd:
+
+/proc/15:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/15/fd:
+
+/proc/15/task:
+15
+
+/proc/15/task/15:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/15/task/15/fd:
+
+/proc/15917:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/15917/fd:
+0   10  12  14  16  18  2   21  23  25  27  4   6   8
+1   11  13  15  17  19  20  22  24  26  3   5   7   9
+
+/proc/15917/task:
+15917
+
+/proc/15917/task/15917:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/15917/task/15917/fd:
+0   10  12  14  16  18  2   21  23  25  27  4   6   8
+1   11  13  15  17  19  20  22  24  26  3   5   7   9
+
+/proc/15990:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/15990/fd:
+0   10  12  14  16  18  2   21  23  25  27  4   6   8
+1   11  13  15  17  19  20  22  24  26  3   5   7   9
+
+/proc/15990/task:
+15990
+
+/proc/15990/task/15990:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/15990/task/15990/fd:
+0   10  12  14  16  18  2   21  23  25  27  4   6   8
+1   11  13  15  17  19  20  22  24  26  3   5   7   9
+
+/proc/15992:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/15992/fd:
+0   10  12  14  16  18  2   21  23  25  27  4   6   8
+1   11  13  15  17  19  20  22  24  26  3   5   7   9
+
+/proc/15992/task:
+15992
+
+/proc/15992/task/15992:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/15992/task/15992/fd:
+0   10  12  14  16  18  2   21  23  25  27  4   6   8
+1   11  13  15  17  19  20  22  24  26  3   5   7   9
+
+/proc/16:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/16/fd:
+0   12  16  2   23  27  30  34  38  41  45  49  52  56  6   63  67
+1   13  17  20  24  28  31  35  39  42  46  5   53  57  60  64  7
+10  14  18  21  25  29  32  36  4   43  47  50  54  58  61  65  8
+11  15  19  22  26  3   33  37  40  44  48  51  55  59  62  66  9
+
+/proc/16/task:
+16
+
+/proc/16/task/16:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/16/task/16/fd:
+0   12  16  2   23  27  30  34  38  41  45  49  52  56  6   63  67
+1   13  17  20  24  28  31  35  39  42  46  5   53  57  60  64  7
+10  14  18  21  25  29  32  36  4   43  47  50  54  58  61  65  8
+11  15  19  22  26  3   33  37  40  44  48  51  55  59  62  66  9
+
+/proc/160:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/160/fd:
+0   1   10  11  12  2   3   4   5   6   7   8   9
+
+/proc/160/task:
+160
+
+/proc/160/task/160:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/160/task/160/fd:
+0   1   10  11  12  2   3   4   5   6   7   8   9
+
+/proc/161:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/161/fd:
+0   1   10  11  12  2   3   4   5   6   7   8   9
+
+/proc/161/task:
+161
+
+/proc/161/task/161:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/161/task/161/fd:
+0   1   10  11  12  2   3   4   5   6   7   8   9
+
+/proc/162:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/162/fd:
+0   1   10  11  12  13  14  15  16  17  2   3   4   5   6   7   8   9
+
+/proc/162/task:
+162
+
+/proc/162/task/162:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/162/task/162/fd:
+0   1   10  11  12  13  14  15  16  17  2   3   4   5   6   7   8   9
+
+/proc/163:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/163/fd:
+
+/proc/163/task:
+163
+
+/proc/163/task/163:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/163/task/163/fd:
+
+/proc/164:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/164/fd:
+
+/proc/164/task:
+164
+
+/proc/164/task/164:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/164/task/164/fd:
+
+/proc/165:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/165/fd:
+
+/proc/165/task:
+165
+
+/proc/165/task/165:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/165/task/165/fd:
+
+/proc/2:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/2/fd:
+
+/proc/2/task:
+2
+
+/proc/2/task/2:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/2/task/2/fd:
+
+/proc/23:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/23/fd:
+
+/proc/23/task:
+23
+
+/proc/23/task/23:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/23/task/23/fd:
+
+/proc/3:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/3/fd:
+
+/proc/3/task:
+3
+
+/proc/3/task/3:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/3/task/3/fd:
+
+/proc/4:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/4/fd:
+
+/proc/4/task:
+4
+
+/proc/4/task/4:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/4/task/4/fd:
+
+/proc/5:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/5/fd:
+
+/proc/5/task:
+5
+
+/proc/5/task/5:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/5/task/5/fd:
+
+/proc/6:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/6/fd:
+
+/proc/6/task:
+6
+
+/proc/6/task/6:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/6/task/6/fd:
+
+/proc/61:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/61/fd:
+0  1  2  3
+
+/proc/61/task:
+61
+
+/proc/61/task/61:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/61/task/61/fd:
+0  1  2  3
+
+/proc/62:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/62/fd:
+0  1  2  3  4  5  6  7
+
+/proc/62/task:
+62
+
+/proc/62/task/62:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/62/task/62/fd:
+0  1  2  3  4  5  6  7
+
+/proc/7:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/7/fd:
+
+/proc/7/task:
+7
+
+/proc/7/task/7:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/7/task/7/fd:
+
+/proc/72:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/72/fd:
+0  1  2  3  4  5
+
+/proc/72/task:
+72
+
+/proc/72/task/72:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/72/task/72/fd:
+0  1  2  3  4  5
+
+/proc/77:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/77/fd:
+0  1  2  3  4  5
+
+/proc/77/task:
+77
+
+/proc/77/task/77:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/77/task/77/fd:
+0  1  2  3  4  5
+
+/proc/78:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/78/fd:
+0  1  2  3  4  5
+
+/proc/78/task:
+78
+
+/proc/78/task/78:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/78/task/78/fd:
+0  1  2  3  4  5
+
+/proc/8:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/8/fd:
+
+/proc/8/task:
+8
+
+/proc/8/task/8:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/8/task/8/fd:
+
+/proc/83:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/83/fd:
+0   1   10  11  12  2   3   4   5   6   7   8   9
+
+/proc/83/task:
+83
+
+/proc/83/task/83:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/83/task/83/fd:
+0   1   10  11  12  2   3   4   5   6   7   8   9
+
+/proc/84:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/84/fd:
+0  1  2  3  4  5
+
+/proc/84/task:
+84
+
+/proc/84/task/84:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/84/task/84/fd:
+0  1  2  3  4  5
+
+/proc/86:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/86/fd:
+0   10  12  14  16  18  2   21  4   6   8
+1   11  13  15  17  19  20  3   5   7   9
+
+/proc/86/task:
+86
+
+/proc/86/task/86:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/86/task/86/fd:
+0   10  12  14  16  18  2   21  4   6   8
+1   11  13  15  17  19  20  3   5   7   9
+
+/proc/87:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/87/fd:
+0   1   10  11  2   3   4   5   6   7   8   9
+
+/proc/87/task:
+87
+
+/proc/87/task/87:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/87/task/87/fd:
+0   1   10  11  2   3   4   5   6   7   8   9
+
+/proc/9:
+auxv        environ     maps        mountstats  root        statm
+cmdline     exe         mem         oom_adj     smaps       status
+cwd         fd          mounts      oom_score   stat        task
+
+/proc/9/fd:
+
+/proc/9/task:
+9
+
+/proc/9/task/9:
+auxv       environ    maps       oom_adj    smaps      status
+cmdline    exe        mem        oom_score  stat
+cwd        fd         mounts     root       statm
+
+/proc/9/task/9/fd:
+
+/proc/bus:
+pci  usb
+
+/proc/bus/pci:
+00       devices
+
+/proc/bus/pci/00:
+00.0  0e.0
+
+/proc/bus/usb:
+001      002      devices
+
+/proc/bus/usb/001:
+001
+
+/proc/bus/usb/002:
+001
+
+/proc/driver:
+dect           ifx_dma        ifx_pci        ifx_usif_uart
+ifx_asc        ifx_gphy       ifx_pmu        jl_dsp
+ifx_cgu        ifx_gpio       ifx_rcu        mei_cpe
+ifx_cpufreq    ifx_ledc       ifx_ssc        slic_debug
+
+/proc/driver/ifx_asc:
+version
+
+/proc/driver/ifx_cgu:
+clk_setting  version
+
+/proc/driver/ifx_cpufreq:
+chipid     dcdc_ctrl  log_level  version
+
+/proc/driver/ifx_dma:
+g_desc_list          ifx_dma_register
+ifx_dma_chan_weight  version
+
+/proc/driver/ifx_gphy:
+clk      gphy0    gphy1    led      mdio     version
+
+/proc/driver/ifx_gphy/gphy0:
+mode       phy0_mdio  power      reset
+
+/proc/driver/ifx_gphy/gphy1:
+mode       phy0_mdio  power      reset
+
+/proc/driver/ifx_gpio:
+board       dbg         module      setup       version     write_gpio
+
+/proc/driver/ifx_ledc:
+version
+
+/proc/driver/ifx_pci:
+pci_cfg  pci_cmd  pci_ctl  version
+
+/proc/driver/ifx_pmu:
+pmu      version
+
+/proc/driver/ifx_rcu:
+domain   version
+
+/proc/driver/ifx_ssc:
+reg      stats    version
+
+/proc/driver/ifx_usif_uart:
+uart     version
+
+/proc/driver/mei_cpe:
+bar_usr_dbg  config       meminfo      nfc          status       version
+
+/proc/driver/mei_cpe/bar_usr_dbg:
+00
+
+/proc/driver/mei_cpe/meminfo:
+00
+
+/proc/driver/mei_cpe/nfc:
+00
+
+/proc/driver/mei_cpe/status:
+00
+
+/proc/eth:
+burstlen           htu                port0mib           prio
+clk                ipv6_ip            port1mib           queue
+dbg                mac                port2mib           route
+direct_forwarding  mc                 port3mib           send
+dsl_vlan           mem                port4mib           tfwdbg
+ewan               mib                port5mib           ver
+fw                 mirror             port6mib
+genconf            mtu                pp32
+hit                out_vlan           pppoe
+
+/proc/fs:
+cramfs_block_uncompressed  nfsd
+
+/proc/fs/nfsd:
+
+/proc/ifxusb_hcd:
+ana_disconnect_threshold_1       connectspeed_2
+ana_disconnect_threshold_2       dbglevel
+ana_squelch_threshold_1          dump_host_state_1
+ana_squelch_threshold_2          dump_host_state_2
+ana_transmitter_crossover_1      dump_params_1
+ana_transmitter_crossover_2      dump_params_2
+ana_transmitter_dc_voltage_1     dump_reg_1
+ana_transmitter_dc_voltage_2     dump_reg_2
+ana_transmitter_impedance_1      dump_spram_1
+ana_transmitter_impedance_2      dump_spram_2
+ana_transmitter_pre_emphasis_1   mode_1
+ana_transmitter_pre_emphasis_2   mode_2
+ana_transmitter_risefall_time_1  probe_host_1
+ana_transmitter_risefall_time_2  probe_host_2
+autoprobe_timer1                 probe_timer1
+autoprobe_timer2                 probe_timer2
+burst_1                          protect1_1
+burst_2                          protect1_2
+busconnected_1                   protect2_1
+busconnected_2                   protect2_2
+buspower_1                       singlexact_1
+buspower_2                       singlexact_2
+bussuspend_1                     suspend_host_1
+bussuspend_2                     suspend_host_2
+connectspeed_1                   version
+
+/proc/irq:
+0    109  12   130  141  152  163  174  26   37   48   59   7    80   91
+1    11   120  131  142  153  164  175  27   38   49   6    70   81   92
+10   110  121  132  143  154  165  176  28   39   5    60   71   82   93
+100  111  122  133  144  155  166  18   29   4    50   61   72   83   94
+101  112  123  134  145  156  167  19   3    40   51   62   73   84   95
+102  113  124  135  146  157  168  2    30   41   52   63   74   85   96
+103  114  125  136  147  158  169  20   31   42   53   64   75   86   97
+104  115  126  137  148  159  17   21   32   43   54   65   76   87   98
+105  116  127  138  149  16   170  22   33   44   55   66   77   88   99
+106  117  128  139  15   160  171  23   34   45   56   67   78   89
+107  118  129  14   150  161  172  24   35   46   57   68   79   9
+108  119  13   140  151  162  173  25   36   47   58   69   8    90
+
+/proc/irq/0:
+
+/proc/irq/1:
+
+/proc/irq/10:
+
+/proc/irq/100:
+
+/proc/irq/101:
+
+/proc/irq/102:
+
+/proc/irq/103:
+asc1_tx
+
+/proc/irq/103/asc1_tx:
+
+/proc/irq/104:
+
+/proc/irq/105:
+asc1_rx
+
+/proc/irq/105/asc1_rx:
+
+/proc/irq/106:
+asc1_err
+
+/proc/irq/106/asc1_err:
+
+/proc/irq/107:
+
+/proc/irq/108:
+
+/proc/irq/109:
+
+/proc/irq/11:
+
+/proc/irq/110:
+
+/proc/irq/111:
+
+/proc/irq/112:
+
+/proc/irq/113:
+
+/proc/irq/114:
+
+/proc/irq/115:
+
+/proc/irq/116:
+
+/proc/irq/117:
+
+/proc/irq/118:
+gptu
+
+/proc/irq/118/gptu:
+
+/proc/irq/119:
+gptu
+
+/proc/irq/119/gptu:
+
+/proc/irq/12:
+
+/proc/irq/120:
+gptu
+
+/proc/irq/120/gptu:
+
+/proc/irq/121:
+gptu
+
+/proc/irq/121/gptu:
+
+/proc/irq/122:
+gptu
+
+/proc/irq/122/gptu:
+
+/proc/irq/123:
+gptu
+
+/proc/irq/123/gptu:
+
+/proc/irq/124:
+
+/proc/irq/125:
+
+/proc/irq/126:
+
+/proc/irq/127:
+
+/proc/irq/128:
+dma-core
+
+/proc/irq/128/dma-core:
+
+/proc/irq/129:
+dma-core
+
+/proc/irq/129/dma-core:
+
+/proc/irq/13:
+
+/proc/irq/130:
+dma-core
+
+/proc/irq/130/dma-core:
+
+/proc/irq/131:
+dma-core
+
+/proc/irq/131/dma-core:
+
+/proc/irq/132:
+dma-core
+
+/proc/irq/132/dma-core:
+
+/proc/irq/133:
+dma-core
+
+/proc/irq/133/dma-core:
+
+/proc/irq/134:
+dma-core
+
+/proc/irq/134/dma-core:
+
+/proc/irq/135:
+dma-core
+
+/proc/irq/135/dma-core:
+
+/proc/irq/136:
+
+/proc/irq/137:
+
+/proc/irq/138:
+
+/proc/irq/139:
+
+/proc/irq/14:
+
+/proc/irq/140:
+
+/proc/irq/141:
+
+/proc/irq/142:
+
+/proc/irq/143:
+
+/proc/irq/144:
+
+/proc/irq/145:
+
+/proc/irq/146:
+
+/proc/irq/147:
+
+/proc/irq/148:
+
+/proc/irq/149:
+
+/proc/irq/15:
+ifx_ssc_tx
+
+/proc/irq/15/ifx_ssc_tx:
+
+/proc/irq/150:
+
+/proc/irq/151:
+
+/proc/irq/152:
+
+/proc/irq/153:
+
+/proc/irq/154:
+
+/proc/irq/155:
+
+/proc/irq/156:
+
+/proc/irq/157:
+
+/proc/irq/158:
+
+/proc/irq/159:
+
+/proc/irq/16:
+
+/proc/irq/160:
+
+/proc/irq/161:
+
+/proc/irq/162:
+
+/proc/irq/163:
+
+/proc/irq/164:
+
+/proc/irq/165:
+
+/proc/irq/166:
+
+/proc/irq/167:
+
+/proc/irq/168:
+
+/proc/irq/169:
+
+/proc/irq/17:
+
+/proc/irq/170:
+
+/proc/irq/171:
+
+/proc/irq/172:
+
+/proc/irq/173:
+
+/proc/irq/174:
+
+/proc/irq/175:
+
+/proc/irq/176:
+
+/proc/irq/18:
+
+/proc/irq/19:
+
+/proc/irq/2:
+
+/proc/irq/20:
+
+/proc/irq/21:
+
+/proc/irq/22:
+
+/proc/irq/23:
+
+/proc/irq/24:
+
+/proc/irq/25:
+
+/proc/irq/26:
+
+/proc/irq/27:
+
+/proc/irq/28:
+
+/proc/irq/29:
+
+/proc/irq/3:
+
+/proc/irq/30:
+
+/proc/irq/31:
+
+/proc/irq/32:
+
+/proc/irq/33:
+
+/proc/irq/34:
+
+/proc/irq/35:
+
+/proc/irq/36:
+
+/proc/irq/37:
+
+/proc/irq/38:
+
+/proc/irq/39:
+
+/proc/irq/4:
+
+/proc/irq/40:
+
+/proc/irq/41:
+
+/proc/irq/42:
+
+/proc/irq/43:
+
+/proc/irq/44:
+
+/proc/irq/45:
+
+/proc/irq/46:
+
+/proc/irq/47:
+
+/proc/irq/48:
+
+/proc/irq/49:
+ifx_pci_ir
+
+/proc/irq/49/ifx_pci_ir:
+
+/proc/irq/5:
+
+/proc/irq/50:
+
+/proc/irq/51:
+
+/proc/irq/52:
+
+/proc/irq/53:
+
+/proc/irq/54:
+ifxusb_hcd_1:usb1
+
+/proc/irq/54/ifxusb_hcd_1:usb1:
+
+/proc/irq/55:
+mei_cpe
+
+/proc/irq/55/mei_cpe:
+
+/proc/irq/56:
+
+/proc/irq/57:
+
+/proc/irq/58:
+
+/proc/irq/59:
+
+/proc/irq/6:
+
+/proc/irq/60:
+ifxusb_oc
+
+/proc/irq/60/ifxusb_oc:
+
+/proc/irq/61:
+
+/proc/irq/62:
+dma-core
+
+/proc/irq/62/dma-core:
+
+/proc/irq/63:
+
+/proc/irq/64:
+dma-core
+
+/proc/irq/64/dma-core:
+
+/proc/irq/65:
+dma-core
+
+/proc/irq/65/dma-core:
+
+/proc/irq/66:
+dma-core
+
+/proc/irq/66/dma-core:
+
+/proc/irq/67:
+dma-core
+
+/proc/irq/67/dma-core:
+
+/proc/irq/68:
+dma-core
+
+/proc/irq/68/dma-core:
+
+/proc/irq/69:
+dma-core
+
+/proc/irq/69/dma-core:
+
+/proc/irq/7:
+
+/proc/irq/70:
+dma-core
+
+/proc/irq/70/dma-core:
+
+/proc/irq/71:
+dma-core
+
+/proc/irq/71/dma-core:
+
+/proc/irq/72:
+dma-core
+
+/proc/irq/72/dma-core:
+
+/proc/irq/73:
+dma-core
+
+/proc/irq/73/dma-core:
+
+/proc/irq/74:
+dma-core
+
+/proc/irq/74/dma-core:
+
+/proc/irq/75:
+dma-core
+
+/proc/irq/75/dma-core:
+
+/proc/irq/76:
+
+/proc/irq/77:
+
+/proc/irq/78:
+
+/proc/irq/79:
+
+/proc/irq/8:
+
+/proc/irq/80:
+dma-core
+
+/proc/irq/80/dma-core:
+
+/proc/irq/81:
+
+/proc/irq/82:
+
+/proc/irq/83:
+ifxusb_hcd_2:usb2
+
+/proc/irq/83/ifxusb_hcd_2:usb2:
+
+/proc/irq/84:
+
+/proc/irq/85:
+dma-core
+
+/proc/irq/85/dma-core:
+
+/proc/irq/86:
+
+/proc/irq/87:
+a5_mailbox0_isr
+
+/proc/irq/87/a5_mailbox0_isr:
+
+/proc/irq/88:
+a5_mailbox_isr
+
+/proc/irq/88/a5_mailbox_isr:
+
+/proc/irq/89:
+dma-core
+
+/proc/irq/89/dma-core:
+
+/proc/irq/9:
+
+/proc/irq/90:
+dma-core
+
+/proc/irq/90/dma-core:
+
+/proc/irq/91:
+dma-core
+
+/proc/irq/91/dma-core:
+
+/proc/irq/92:
+dma-core
+
+/proc/irq/92/dma-core:
+
+/proc/irq/93:
+dma-core
+
+/proc/irq/93/dma-core:
+
+/proc/irq/94:
+
+/proc/irq/95:
+
+/proc/irq/96:
+
+/proc/irq/97:
+
+/proc/irq/98:
+
+/proc/irq/99:
+
+/proc/mips:
+mtsched
+
+/proc/net:
+arp                ipsec_spigrp       pf_key_registered  softnet_stat
+atm                ipsec_tncfg        pf_key_supported   stat
+dev                ipsec_version      protocols          tcp
+dev_mcast          mcfilter           psched             udp
+igmp               netfilter          raw                udplite
+ipsec_eroute       netlink            route              unix
+ipsec_klipsdebug   netstat            rt_cache           vlan
+ipsec_natt         packet             snmp               wireless
+ipsec_spi          pf_key             sockstat
+
+/proc/net/atm:
+br2684   devices  pvc      svc      vc
+
+/proc/net/netfilter:
+nf_log    nf_queue
+
+/proc/net/stat:
+arp_cache  rt_cache
+
+/proc/net/vlan:
+config    eth1.100
+
+/proc/pmcu:
+debug        device_list  version
+
+/proc/pmcu/debug:
+cpu        dsl        gptu       sdio       usb        vlynq
+cpu_ps     eth        pci        spi        usif_spi   wlan
+dect       fxo        pcie       switch     usif_uart
+deu        fxs        ppe        uart       ve
+
+/proc/rt3062:
+debug_level  led_control  register
+
+/proc/sys:
+debug   dev     fs      kernel  net     vm
+
+/proc/sys/debug:
+
+/proc/sys/dev:
+ifx_ssc  raid     scsi
+
+/proc/sys/dev/ifx_ssc:
+debug
+
+/proc/sys/dev/raid:
+speed_limit_max  speed_limit_min
+
+/proc/sys/dev/scsi:
+logging_level
+
+/proc/sys/fs:
+aio-max-nr        file-max          inode-state       overflowgid
+aio-nr            file-nr           lease-break-time  overflowuid
+dentry-state      inode-nr          leases-enable     suid_dumpable
+
+/proc/sys/kernel:
+cad_pid                 ngroups_max             printk_ratelimit
+cap-bound               osrelease               printk_ratelimit_burst
+core_pattern            ostype                  random
+core_uses_pid           overflowgid             randomize_va_space
+ctrl-alt-del            overflowuid             real-root-dev
+domainname              panic                   sysrq
+hostname                panic_on_oops           tainted
+hotplug                 pid_max                 threads-max
+modprobe                printk                  version
+
+/proc/sys/kernel/random:
+boot_id                 poolsize                uuid
+entropy_avail           read_wakeup_threshold   write_wakeup_threshold
+
+/proc/sys/net:
+core   ipsec  ipv4   unix
+
+/proc/sys/net/core:
+dev_weight          optmem_max          wmem_max
+message_burst       rmem_default        xfrm_aevent_etime
+message_cost        rmem_max            xfrm_aevent_rseqth
+netdev_budget       somaxconn
+netdev_max_backlog  wmem_default
+
+/proc/sys/net/ipsec:
+debug_ah              debug_pfkey           debug_verbose
+debug_eroute          debug_radij           debug_xform
+debug_esp             debug_rcv             icmp
+debug_ipcomp          debug_spi             inbound_policy_check
+debug_netlink         debug_tunnel          tos
+
+/proc/sys/net/ipv4:
+conf                               tcp_ecn
+icmp_echo_ignore_all               tcp_fack
+icmp_echo_ignore_broadcasts        tcp_fin_timeout
+icmp_errors_use_inbound_ifaddr     tcp_frto
+icmp_ignore_bogus_error_responses  tcp_keepalive_intvl
+icmp_ratelimit                     tcp_keepalive_probes
+icmp_ratemask                      tcp_keepalive_time
+igmp_max_memberships               tcp_low_latency
+igmp_max_msf                       tcp_max_orphans
+inet_peer_gc_maxtime               tcp_max_syn_backlog
+inet_peer_gc_mintime               tcp_max_tw_buckets
+inet_peer_maxttl                   tcp_mem
+inet_peer_minttl                   tcp_moderate_rcvbuf
+inet_peer_threshold                tcp_mtu_probing
+ip_default_ttl                     tcp_no_metrics_save
+ip_dynaddr                         tcp_orphan_retries
+ip_forward                         tcp_reordering
+ip_local_port_range                tcp_retrans_collapse
+ip_no_pmtu_disc                    tcp_retries1
+ip_nonlocal_bind                   tcp_retries2
+ipfrag_high_thresh                 tcp_rfc1337
+ipfrag_low_thresh                  tcp_rmem
+ipfrag_max_dist                    tcp_sack
+ipfrag_secret_interval             tcp_slow_start_after_idle
+ipfrag_time                        tcp_stdurg
+neigh                              tcp_syn_retries
+route                              tcp_synack_retries
+tcp_abc                            tcp_syncookies
+tcp_abort_on_overflow              tcp_timestamps
+tcp_adv_win_scale                  tcp_tso_win_divisor
+tcp_allowed_congestion_control     tcp_tw_recycle
+tcp_app_win                        tcp_tw_reuse
+tcp_available_congestion_control   tcp_window_scaling
+tcp_base_mss                       tcp_wmem
+tcp_congestion_control             tcp_workaround_signed_windows
+tcp_dsack
+
+/proc/sys/net/ipv4/conf:
+all       default   eth1      ethoa0    ra0
+br0       eth0      eth1.100  lo        s_br0
+
+/proc/sys/net/ipv4/conf/all:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/br0:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/default:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/eth0:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/eth1:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/eth1.100:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/ethoa0:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/lo:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/ra0:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/conf/s_br0:
+accept_redirects     disable_policy       promote_secondaries
+accept_source_route  disable_xfrm         proxy_arp
+arp_accept           force_igmp_version   rp_filter
+arp_announce         forwarding           secure_redirects
+arp_filter           log_martians         send_redirects
+arp_ignore           mc_forwarding        shared_media
+bootp_relay          medium_id            tag
+
+/proc/sys/net/ipv4/neigh:
+br0       eth0      eth1.100  lo        s_br0
+default   eth1      ethoa0    ra0
+
+/proc/sys/net/ipv4/neigh/br0:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/default:
+anycast_delay           gc_stale_time           proxy_delay
+app_solicit             gc_thresh1              proxy_qlen
+base_reachable_time     gc_thresh2              retrans_time
+base_reachable_time_ms  gc_thresh3              retrans_time_ms
+delay_first_probe_time  locktime                ucast_solicit
+gc_interval             mcast_solicit           unres_qlen
+
+/proc/sys/net/ipv4/neigh/eth0:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/eth1:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/eth1.100:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/ethoa0:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/lo:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/ra0:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/neigh/s_br0:
+anycast_delay           gc_stale_time           retrans_time
+app_solicit             locktime                retrans_time_ms
+base_reachable_time     mcast_solicit           ucast_solicit
+base_reachable_time_ms  proxy_delay             unres_qlen
+delay_first_probe_time  proxy_qlen
+
+/proc/sys/net/ipv4/route:
+error_burst         gc_thresh           mtu_expires
+error_cost          gc_timeout          redirect_load
+flush               max_delay           redirect_number
+gc_elasticity       max_size            redirect_silence
+gc_interval         min_adv_mss         secret_interval
+gc_min_interval     min_delay
+gc_min_interval_ms  min_pmtu
+
+/proc/sys/net/unix:
+max_dgram_qlen
+
+/proc/sys/vm:
+block_dump                 min_free_kbytes
+dirty_background_ratio     nr_pdflush_threads
+dirty_expire_centisecs     overcommit_memory
+dirty_ratio                overcommit_ratio
+dirty_writeback_centisecs  page-cluster
+drop_caches                panic_on_oom
+laptop_mode                percpu_pagelist_fraction
+lowmem_reserve_ratio       swappiness
+max_map_count              vfs_cache_pressure
+
+/proc/sysvipc:
+msg  sem  shm
+
+/proc/tty:
+driver   drivers  ldisc    ldiscs
+
+/proc/tty/driver:
+ttyS       ttyUSIF    usbserial
+
+/proc/tty/ldisc:
+
+/sys:
+block     class     firmware  kernel
+bus       devices   fs        module
+
+/sys/block:
+loop0      loop2      loop4      loop6      mtdblock0  mtdblock2
+loop1      loop3      loop5      loop7      mtdblock1  mtdblock3
+
+/sys/block/loop0:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop0/holders:
+
+/sys/block/loop0/slaves:
+
+/sys/block/loop1:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop1/holders:
+
+/sys/block/loop1/slaves:
+
+/sys/block/loop2:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop2/holders:
+
+/sys/block/loop2/slaves:
+
+/sys/block/loop3:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop3/holders:
+
+/sys/block/loop3/slaves:
+
+/sys/block/loop4:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop4/holders:
+
+/sys/block/loop4/slaves:
+
+/sys/block/loop5:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop5/holders:
+
+/sys/block/loop5/slaves:
+
+/sys/block/loop6:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop6/holders:
+
+/sys/block/loop6/slaves:
+
+/sys/block/loop7:
+dev        range      size       stat       uevent
+holders    removable  slaves     subsystem
+
+/sys/block/loop7/holders:
+
+/sys/block/loop7/slaves:
+
+/sys/block/mtdblock0:
+dev        queue      removable  slaves     subsystem
+holders    range      size       stat       uevent
+
+/sys/block/mtdblock0/holders:
+
+/sys/block/mtdblock0/queue:
+iosched            max_sectors_kb     read_ahead_kb
+max_hw_sectors_kb  nr_requests        scheduler
+
+/sys/block/mtdblock0/queue/iosched:
+antic_expire        read_batch_expire   write_batch_expire
+est_time            read_expire         write_expire
+
+/sys/block/mtdblock0/slaves:
+
+/sys/block/mtdblock1:
+dev        queue      removable  slaves     subsystem
+holders    range      size       stat       uevent
+
+/sys/block/mtdblock1/holders:
+
+/sys/block/mtdblock1/queue:
+iosched            max_sectors_kb     read_ahead_kb
+max_hw_sectors_kb  nr_requests        scheduler
+
+/sys/block/mtdblock1/queue/iosched:
+antic_expire        read_batch_expire   write_batch_expire
+est_time            read_expire         write_expire
+
+/sys/block/mtdblock1/slaves:
+
+/sys/block/mtdblock2:
+dev        queue      removable  slaves     subsystem
+holders    range      size       stat       uevent
+
+/sys/block/mtdblock2/holders:
+
+/sys/block/mtdblock2/queue:
+iosched            max_sectors_kb     read_ahead_kb
+max_hw_sectors_kb  nr_requests        scheduler
+
+/sys/block/mtdblock2/queue/iosched:
+antic_expire        read_batch_expire   write_batch_expire
+est_time            read_expire         write_expire
+
+/sys/block/mtdblock2/slaves:
+
+/sys/block/mtdblock3:
+dev        queue      removable  slaves     subsystem
+holders    range      size       stat       uevent
+
+/sys/block/mtdblock3/holders:
+
+/sys/block/mtdblock3/queue:
+iosched            max_sectors_kb     read_ahead_kb
+max_hw_sectors_kb  nr_requests        scheduler
+
+/sys/block/mtdblock3/queue/iosched:
+antic_expire        read_batch_expire   write_batch_expire
+est_time            read_expire         write_expire
+
+/sys/block/mtdblock3/slaves:
+
+/sys/bus:
+pci         platform    scsi        spi         usb         usb-serial
+
+/sys/bus/pci:
+devices  drivers
+
+/sys/bus/pci/devices:
+0000:00:00.0  0000:00:0e.0
+
+/sys/bus/pci/drivers:
+rt2860
+
+/sys/bus/pci/drivers/rt2860:
+0000:00:0e.0  bind          module        new_id        unbind
+
+/sys/bus/platform:
+devices  drivers
+
+/sys/bus/platform/devices:
+ifxusb_hcd
+
+/sys/bus/platform/drivers:
+ifxusb_hcd
+
+/sys/bus/platform/drivers/ifxusb_hcd:
+bind        ifxusb_hcd  module      unbind
+
+/sys/bus/scsi:
+devices  drivers
+
+/sys/bus/scsi/devices:
+
+/sys/bus/scsi/drivers:
+sd
+
+/sys/bus/scsi/drivers/sd:
+bind    unbind
+
+/sys/bus/spi:
+devices  drivers
+
+/sys/bus/spi/devices:
+
+/sys/bus/spi/drivers:
+
+/sys/bus/usb:
+devices  drivers
+
+/sys/bus/usb/devices:
+1-0:1.0  2-0:1.0  usb1     usb2
+
+/sys/bus/usb/drivers:
+hub          sierra       usb-storage  usblp
+option       usb          usbfs        usbserial
+
+/sys/bus/usb/drivers/hub:
+1-0:1.0  2-0:1.0  bind     module   new_id   unbind
+
+/sys/bus/usb/drivers/option:
+bind    unbind
+
+/sys/bus/usb/drivers/sierra:
+bind    module  new_id  unbind
+
+/sys/bus/usb/drivers/usb:
+bind    unbind  usb1    usb2
+
+/sys/bus/usb/drivers/usb-storage:
+bind    module  new_id  unbind
+
+/sys/bus/usb/drivers/usbfs:
+bind    module  new_id  unbind
+
+/sys/bus/usb/drivers/usblp:
+bind    module  new_id  unbind
+
+/sys/bus/usb/drivers/usbserial:
+bind    module  unbind
+
+/sys/bus/usb-serial:
+devices  drivers
+
+/sys/bus/usb-serial/devices:
+
+/sys/bus/usb-serial/drivers:
+option1  sierra
+
+/sys/bus/usb-serial/drivers/option1:
+bind    new_id  unbind
+
+/sys/bus/usb-serial/drivers/sierra:
+bind    new_id  unbind
+
+/sys/class:
+atm           mtd           scsi_disk     ubi
+mem           net           scsi_host     usb_device
+misc          pci_bus       spi_master    usb_endpoint
+mt            scsi_device   tty           usb_host
+
+/sys/class/atm:
+ifx_atm0  ifx_atm1
+
+/sys/class/atm/ifx_atm0:
+address     carrier     subsystem   uevent
+atmaddress  link_rate   type
+
+/sys/class/atm/ifx_atm1:
+address     carrier     subsystem   uevent
+atmaddress  link_rate   type
+
+/sys/class/mem:
+full     kmsg     null     random   zero
+kmem     mem      port     urandom
+
+/sys/class/misc:
+fuse      gptu      ubi_ctrl
+
+/sys/class/mt:
+vpe1
+
+/sys/class/mtd:
+mtd0    mtd0ro  mtd1    mtd1ro  mtd2    mtd2ro  mtd3    mtd3ro
+
+/sys/class/mtd/mtd0:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd0ro:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd1:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd1ro:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd2:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd2ro:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd3:
+dev        subsystem  uevent
+
+/sys/class/mtd/mtd3ro:
+dev        subsystem  uevent
+
+/sys/class/net:
+br0       eth1      ethoa0    ra0
+eth0      eth1.100  lo        s_br0
+
+/sys/class/pci_bus:
+0000:00
+
+/sys/class/pci_bus/0000:00:
+bridge       cpuaffinity  subsystem    uevent
+
+/sys/class/scsi_device:
+
+/sys/class/scsi_disk:
+
+/sys/class/scsi_host:
+
+/sys/class/spi_master:
+
+/sys/class/tty:
+console   ptyp5     ptypb     ttyS0     ttyp4     ttypa
+ptyp0     ptyp6     ptypc     ttyUSIF0  ttyp5     ttypb
+ptyp1     ptyp7     ptypd     ttyp0     ttyp6     ttypc
+ptyp2     ptyp8     ptype     ttyp1     ttyp7     ttypd
+ptyp3     ptyp9     ptypf     ttyp2     ttyp8     ttype
+ptyp4     ptypa     tty       ttyp3     ttyp9     ttypf
+
+/sys/class/ubi:
+ubi0     ubi0_1   version
+
+/sys/class/usb_device:
+usbdev1.1  usbdev2.1
+
+/sys/class/usb_endpoint:
+usbdev1.1_ep00  usbdev1.1_ep81  usbdev2.1_ep00  usbdev2.1_ep81
+
+/sys/class/usb_host:
+usb_host1  usb_host2
+
+/sys/class/usb_host/usb_host1:
+device     subsystem  uevent
+
+/sys/class/usb_host/usb_host2:
+device     subsystem  uevent
+
+/sys/devices:
+pci0000:00  platform    system      virtual
+
+/sys/devices/pci0000:00:
+0000:00:00.0  0000:00:0e.0  uevent
+
+/sys/devices/pci0000:00/0000:00:00.0:
+broken_parity_status  irq                   subsystem
+class                 local_cpus            subsystem_device
+config                modalias              subsystem_vendor
+device                msi_bus               uevent
+enable                resource              vendor
+
+/sys/devices/pci0000:00/0000:00:0e.0:
+broken_parity_status  irq                   subsystem_device
+class                 local_cpus            subsystem_vendor
+config                modalias              uevent
+device                msi_bus               vendor
+driver                resource
+enable                subsystem
+
+/sys/devices/platform:
+ifxusb_hcd  uevent
+
+/sys/devices/platform/ifxusb_hcd:
+ana_disconnect_threshold_1       dump_host_state_2
+ana_disconnect_threshold_2       dump_params_h_1
+ana_squelch_threshold_1          dump_params_h_2
+ana_squelch_threshold_2          dump_reg_h_1
+ana_transmitter_crossover_1      dump_reg_h_2
+ana_transmitter_crossover_2      dump_spram_h_1
+ana_transmitter_dc_voltage_1     dump_spram_h_2
+ana_transmitter_dc_voltage_2     modalias
+ana_transmitter_impedance_1      mode_h_1
+ana_transmitter_impedance_2      mode_h_2
+ana_transmitter_pre_emphasis_1   pools
+ana_transmitter_pre_emphasis_2   probe_host_1
+ana_transmitter_risefall_time_1  probe_host_2
+ana_transmitter_risefall_time_2  probe_timer1_val_h
+autoprobe_timer1_val_h           probe_timer2_val_h
+autoprobe_timer2_val_h           protect1_1
+burst_1                          protect1_2
+burst_2                          protect2_1
+busconnected_1                   protect2_2
+busconnected_2                   singlexact_1
+buspower_1                       singlexact_2
+buspower_2                       subsystem
+bussuspend_1                     suspend_host_1
+bussuspend_2                     suspend_host_2
+connectspeed_1                   uevent
+connectspeed_2                   usb1
+dbglevel_h                       usb2
+driver                           version_h
+dump_host_state_1
+
+/sys/devices/platform/ifxusb_hcd/usb1:
+1-0:1.0              bmAttributes         quirks
+bConfigurationValue  configuration        serial
+bDeviceClass         devnum               speed
+bDeviceProtocol      driver               subsystem
+bDeviceSubClass      ep_00                uevent
+bMaxPacketSize0      idProduct            usbdev1.1
+bMaxPower            idVendor             usbdev1.1_ep00
+bNumConfigurations   manufacturer         version
+bNumInterfaces       maxchild
+bcdDevice            product
+
+/sys/devices/platform/ifxusb_hcd/usb1/1-0:1.0:
+bAlternateSetting   bInterfaceSubClass  modalias
+bInterfaceClass     bNumEndpoints       subsystem
+bInterfaceNumber    driver              uevent
+bInterfaceProtocol  ep_81               usbdev1.1_ep81
+
+/sys/devices/platform/ifxusb_hcd/usb1/1-0:1.0/usbdev1.1_ep81:
+bEndpointAddress  bmAttributes      direction         type
+bInterval         dev               interval          uevent
+bLength           device            subsystem         wMaxPacketSize
+
+/sys/devices/platform/ifxusb_hcd/usb1/usbdev1.1:
+dev        device     subsystem  uevent
+
+/sys/devices/platform/ifxusb_hcd/usb1/usbdev1.1_ep00:
+bEndpointAddress  bmAttributes      direction         type
+bInterval         dev               interval          uevent
+bLength           device            subsystem         wMaxPacketSize
+
+/sys/devices/platform/ifxusb_hcd/usb2:
+2-0:1.0              bmAttributes         quirks
+bConfigurationValue  configuration        serial
+bDeviceClass         devnum               speed
+bDeviceProtocol      driver               subsystem
+bDeviceSubClass      ep_00                uevent
+bMaxPacketSize0      idProduct            usbdev2.1
+bMaxPower            idVendor             usbdev2.1_ep00
+bNumConfigurations   manufacturer         version
+bNumInterfaces       maxchild
+bcdDevice            product
+
+/sys/devices/platform/ifxusb_hcd/usb2/2-0:1.0:
+bAlternateSetting   bInterfaceSubClass  modalias
+bInterfaceClass     bNumEndpoints       subsystem
+bInterfaceNumber    driver              uevent
+bInterfaceProtocol  ep_81               usbdev2.1_ep81
+
+/sys/devices/platform/ifxusb_hcd/usb2/2-0:1.0/usbdev2.1_ep81:
+bEndpointAddress  bmAttributes      direction         type
+bInterval         dev               interval          uevent
+bLength           device            subsystem         wMaxPacketSize
+
+/sys/devices/platform/ifxusb_hcd/usb2/usbdev2.1:
+dev        device     subsystem  uevent
+
+/sys/devices/platform/ifxusb_hcd/usb2/usbdev2.1_ep00:
+bEndpointAddress  bmAttributes      direction         type
+bInterval         dev               interval          uevent
+bLength           device            subsystem         wMaxPacketSize
+
+/sys/devices/system:
+clocksource  cpu          timekeeping
+
+/sys/devices/system/clocksource:
+clocksource0
+
+/sys/devices/system/clocksource/clocksource0:
+available_clocksource  current_clocksource
+
+/sys/devices/system/cpu:
+cpu0
+
+/sys/devices/system/cpu/cpu0:
+
+/sys/devices/system/timekeeping:
+timekeeping0
+
+/sys/devices/system/timekeeping/timekeeping0:
+
+/sys/devices/virtual:
+mem   misc  mt    net   tty   ubi
+
+/sys/devices/virtual/mem:
+full     kmsg     null     random   zero
+kmem     mem      port     urandom
+
+/sys/devices/virtual/mem/full:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/kmem:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/kmsg:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/mem:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/null:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/port:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/random:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/urandom:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mem/zero:
+dev        subsystem  uevent
+
+/sys/devices/virtual/misc:
+fuse      gptu      ubi_ctrl
+
+/sys/devices/virtual/misc/fuse:
+dev        subsystem  uevent
+
+/sys/devices/virtual/misc/gptu:
+dev        subsystem  uevent
+
+/sys/devices/virtual/misc/ubi_ctrl:
+dev        subsystem  uevent
+
+/sys/devices/virtual/mt:
+vpe1
+
+/sys/devices/virtual/mt/vpe1:
+dev        subsystem  uevent
+
+/sys/devices/virtual/net:
+br0       eth1      ethoa0    ra0
+eth0      eth1.100  lo        s_br0
+
+/sys/devices/virtual/net/br0:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/br0/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/eth0:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/eth0/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/eth1:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/eth1/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/eth1.100:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/eth1.100/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/ethoa0:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/ethoa0/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/lo:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/lo/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/ra0:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/ra0/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/net/s_br0:
+addr_len      dormant       iflink        statistics    uevent
+address       features      link_mode     subsystem     weight
+broadcast     flags         mtu           tx_queue_len
+carrier       ifindex       operstate     type
+
+/sys/devices/virtual/net/s_br0/statistics:
+collisions           rx_frame_errors      tx_compressed
+multicast            rx_length_errors     tx_dropped
+rx_bytes             rx_missed_errors     tx_errors
+rx_compressed        rx_over_errors       tx_fifo_errors
+rx_crc_errors        rx_packets           tx_heartbeat_errors
+rx_dropped           tx_aborted_errors    tx_packets
+rx_errors            tx_bytes             tx_window_errors
+rx_fifo_errors       tx_carrier_errors
+
+/sys/devices/virtual/tty:
+console   ptyp5     ptypb     ttyS0     ttyp4     ttypa
+ptyp0     ptyp6     ptypc     ttyUSIF0  ttyp5     ttypb
+ptyp1     ptyp7     ptypd     ttyp0     ttyp6     ttypc
+ptyp2     ptyp8     ptype     ttyp1     ttyp7     ttypd
+ptyp3     ptyp9     ptypf     ttyp2     ttyp8     ttype
+ptyp4     ptypa     tty       ttyp3     ttyp9     ttypf
+
+/sys/devices/virtual/tty/console:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp0:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp1:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp2:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp3:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp4:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp5:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp6:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp7:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp8:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptyp9:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptypa:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptypb:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptypc:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptypd:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptype:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ptypf:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/tty:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyS0:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyUSIF0:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp0:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp1:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp2:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp3:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp4:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp5:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp6:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp7:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp8:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttyp9:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttypa:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttypb:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttypc:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttypd:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttype:
+dev        subsystem  uevent
+
+/sys/devices/virtual/tty/ttypf:
+dev        subsystem  uevent
+
+/sys/devices/virtual/ubi:
+ubi0
+
+/sys/devices/virtual/ubi/ubi0:
+avail_eraseblocks  eraseblock_size    mtd_num            ubi0_1
+bad_peb_count      max_ec             reserved_for_bad   uevent
+bgt_enabled        max_vol_count      subsystem          volumes_count
+dev                min_io_size        total_eraseblocks
+
+/sys/devices/virtual/ubi/ubi0/ubi0_1:
+alignment       dev             reserved_ebs    uevent
+corrupted       device          subsystem       upd_marker
+data_bytes      name            type            usable_eb_size
+
+/sys/firmware:
+
+/sys/fs:
+fuse
+
+/sys/fs/fuse:
+connections
+
+/sys/fs/fuse/connections:
+
+/sys/kernel:
+uevent_helper  uevent_seqnum
+
+/sys/module:
+ac494_mod                    one_module
+ac49x_dsp_mod                phone_mod
+be_pppoa_mod                 pppoe_relay
+be_pppos_mod                 printk
+btn                          qos_ingress
+dect_drv_mod                 rcupdate
+drv_dsl_cpe_api_mod          rg_ipsec
+drv_ifxos_mod                rg_ipv4
+ifx_ethsw_linux              rg_klog
+ifxmips_deu                  rg_klog_chardev
+ifxmips_ppa_datapath_a5_mod  rg_klog_ram_be
+ifxmips_ppa_hal_a5_mod       rg_pppoe_relay
+ifxmips_usif_uart_mod        rg_usfs
+ifxusb_driver_mod            rt3062
+igmp_proxy_mod               rtp
+ipsec_1des                   scsi_mod
+ipsec_3des                   sierra
+ipsec_aes                    silabs_fxs_3226_drv_mod
+ipsec_md5                    tcp_mss
+ipsec_null                   ubi
+ipsec_sha1                   usb_storage
+kleds_mod                    usbcore
+log_chardev                  usblp
+loop                         usbnet
+md_mod                       usbserial
+nb_rt                        watchdog_mod
+
+/sys/module/ac494_mod:
+holders    initstate  refcnt
+
+/sys/module/ac494_mod/holders:
+
+/sys/module/ac49x_dsp_mod:
+holders    initstate  refcnt
+
+/sys/module/ac49x_dsp_mod/holders:
+ac494_mod
+
+/sys/module/be_pppoa_mod:
+holders    initstate  refcnt
+
+/sys/module/be_pppoa_mod/holders:
+one_module
+
+/sys/module/be_pppos_mod:
+holders    initstate  refcnt
+
+/sys/module/be_pppos_mod/holders:
+one_module
+
+/sys/module/btn:
+holders    initstate  refcnt
+
+/sys/module/btn/holders:
+
+/sys/module/dect_drv_mod:
+holders    initstate  refcnt
+
+/sys/module/dect_drv_mod/holders:
+
+/sys/module/drv_dsl_cpe_api_mod:
+holders    initstate  refcnt
+
+/sys/module/drv_dsl_cpe_api_mod/holders:
+
+/sys/module/drv_ifxos_mod:
+holders    initstate  refcnt
+
+/sys/module/drv_ifxos_mod/holders:
+drv_dsl_cpe_api_mod
+
+/sys/module/ifx_ethsw_linux:
+
+/sys/module/ifxmips_deu:
+
+/sys/module/ifxmips_ppa_datapath_a5_mod:
+holders    initstate  refcnt
+
+/sys/module/ifxmips_ppa_datapath_a5_mod/holders:
+
+/sys/module/ifxmips_ppa_hal_a5_mod:
+holders    initstate  refcnt
+
+/sys/module/ifxmips_ppa_hal_a5_mod/holders:
+
+/sys/module/ifxmips_usif_uart_mod:
+holders    initstate  refcnt
+
+/sys/module/ifxmips_usif_uart_mod/holders:
+
+/sys/module/ifxusb_driver_mod:
+drivers     holders     initstate   parameters  refcnt
+
+/sys/module/ifxusb_driver_mod/drivers:
+platform:ifxusb_hcd
+
+/sys/module/ifxusb_driver_mod/holders:
+
+/sys/module/ifxusb_driver_mod/parameters:
+ana_disconnect_threshold       host_channels
+ana_squelch_threshold          max_packet_count
+ana_transmitter_crossover      max_transfer_size
+ana_transmitter_dc_voltage     nperio_tx_fifo_size
+ana_transmitter_impedance      perio_tx_fifo_size
+ana_transmitter_pre_emphasis   phy_utmi_width
+ana_transmitter_risefall_time  rx_fifo_size
+data_fifo_size                 speed
+dbg_lvl                        timeout_cal
+dma_burst_size
+
+/sys/module/igmp_proxy_mod:
+holders    initstate  refcnt
+
+/sys/module/igmp_proxy_mod/holders:
+
+/sys/module/ipsec_1des:
+holders    initstate  refcnt
+
+/sys/module/ipsec_1des/holders:
+
+/sys/module/ipsec_3des:
+holders    initstate  refcnt
+
+/sys/module/ipsec_3des/holders:
+
+/sys/module/ipsec_aes:
+holders    initstate  refcnt
+
+/sys/module/ipsec_aes/holders:
+
+/sys/module/ipsec_md5:
+holders    initstate  refcnt
+
+/sys/module/ipsec_md5/holders:
+
+/sys/module/ipsec_null:
+holders    initstate  refcnt
+
+/sys/module/ipsec_null/holders:
+
+/sys/module/ipsec_sha1:
+holders    initstate  refcnt
+
+/sys/module/ipsec_sha1/holders:
+
+/sys/module/kleds_mod:
+holders    initstate  refcnt
+
+/sys/module/kleds_mod/holders:
+
+/sys/module/log_chardev:
+holders    initstate  refcnt
+
+/sys/module/log_chardev/holders:
+
+/sys/module/loop:
+
+/sys/module/md_mod:
+parameters
+
+/sys/module/md_mod/parameters:
+start_dirty_degraded  start_ro
+
+/sys/module/nb_rt:
+holders    initstate  refcnt
+
+/sys/module/nb_rt/holders:
+
+/sys/module/one_module:
+holders    initstate  refcnt
+
+/sys/module/one_module/holders:
+ac494_mod                nb_rt                    rg_pppoe_relay
+btn                      phone_mod                rg_usfs
+dect_drv_mod             qos_ingress              rtp
+igmp_proxy_mod           rg_ipsec                 silabs_fxs_3226_drv_mod
+kleds_mod                rg_ipv4                  tcp_mss
+log_chardev              rg_klog_chardev          watchdog_mod
+
+/sys/module/phone_mod:
+holders    initstate  refcnt
+
+/sys/module/phone_mod/holders:
+ac494_mod
+
+/sys/module/pppoe_relay:
+holders    initstate  refcnt
+
+/sys/module/pppoe_relay/holders:
+rg_pppoe_relay
+
+/sys/module/printk:
+parameters
+
+/sys/module/printk/parameters:
+printk_time
+
+/sys/module/qos_ingress:
+holders    initstate  refcnt
+
+/sys/module/qos_ingress/holders:
+
+/sys/module/rcupdate:
+
+/sys/module/rg_ipsec:
+holders    initstate  refcnt
+
+/sys/module/rg_ipsec/holders:
+
+/sys/module/rg_ipv4:
+holders    initstate  refcnt
+
+/sys/module/rg_ipv4/holders:
+
+/sys/module/rg_klog:
+holders    initstate  refcnt
+
+/sys/module/rg_klog/holders:
+rg_klog_chardev  rg_klog_ram_be   watchdog_mod
+
+/sys/module/rg_klog_chardev:
+holders    initstate  refcnt
+
+/sys/module/rg_klog_chardev/holders:
+
+/sys/module/rg_klog_ram_be:
+holders    initstate  refcnt
+
+/sys/module/rg_klog_ram_be/holders:
+
+/sys/module/rg_pppoe_relay:
+holders    initstate  refcnt
+
+/sys/module/rg_pppoe_relay/holders:
+
+/sys/module/rg_usfs:
+holders    initstate  refcnt
+
+/sys/module/rg_usfs/holders:
+
+/sys/module/rt3062:
+drivers    holders    initstate  refcnt
+
+/sys/module/rt3062/drivers:
+pci:rt2860
+
+/sys/module/rt3062/holders:
+
+/sys/module/rtp:
+holders    initstate  refcnt
+
+/sys/module/rtp/holders:
+phone_mod
+
+/sys/module/scsi_mod:
+parameters
+
+/sys/module/scsi_mod/parameters:
+default_dev_flags   max_luns            scan
+inq_timeout         max_report_luns     scsi_logging_level
+
+/sys/module/sierra:
+drivers     parameters
+
+/sys/module/sierra/drivers:
+usb:sierra
+
+/sys/module/sierra/parameters:
+debug       nmea        truinstall
+
+/sys/module/silabs_fxs_3226_drv_mod:
+holders    initstate  refcnt
+
+/sys/module/silabs_fxs_3226_drv_mod/holders:
+ac494_mod
+
+/sys/module/tcp_mss:
+holders    initstate  refcnt
+
+/sys/module/tcp_mss/holders:
+rtp
+
+/sys/module/ubi:
+
+/sys/module/usb_storage:
+drivers     parameters
+
+/sys/module/usb_storage/drivers:
+usb:usb-storage
+
+/sys/module/usb_storage/parameters:
+delay_use       option_zero_cd
+
+/sys/module/usbcore:
+drivers     parameters
+
+/sys/module/usbcore/drivers:
+usb:hub    usb:usbfs
+
+/sys/module/usbcore/parameters:
+blinkenlights     old_scheme_first  usbfs_snoop       use_both_schemes
+
+/sys/module/usblp:
+drivers     parameters
+
+/sys/module/usblp/drivers:
+usb:usblp
+
+/sys/module/usblp/parameters:
+proto_bias
+
+/sys/module/usbnet:
+
+/sys/module/usbserial:
+drivers     parameters
+
+/sys/module/usbserial/drivers:
+usb:usbserial
+
+/sys/module/usbserial/parameters:
+debug
+
+/sys/module/watchdog_mod:
+holders    initstate  refcnt
+
+/sys/module/watchdog_mod/holders:
+
+/tmp:
+dms_ipc         dsl_status      privateKeyFile
+dsl_serial_num  pipe
+
+/tmp/pipe:
+dsl_cpe0_ack    dsl_cpe0_cmd    dsl_cpe0_event
+
+/usr:
+local
+
+/usr/local:
+psmart  share
+
+/usr/local/psmart:
+bin  etc  lib
+
+/usr/local/psmart/bin:
+bootstrap      callgen        envset         pktcap         snmphttpproxy
+buildinfo      envprint       getbits.sh     probe
+
+/usr/local/psmart/etc:
+startproc.cfg
+
+/usr/local/psmart/lib:
+libaxtls.so              libgcc_s.so.1            libosip2.so.6.2.0
+libaxtls.so.1            libortp.so               libosipparser2.so
+libaxtls.so.1.2          libortp.so.5             libosipparser2.so.6
+libcurl.so               libortp.so.5.0.0         libosipparser2.so.6.2.0
+libcurl.so.4             libosip2.so
+libcurl.so.4.2.0         libosip2.so.6
+
+/usr/local/share:
+dlna
+
+/usr/local/share/dlna:
+DMS  xml
+
+/usr/local/share/dlna/DMS:
+data   media
+
+/usr/local/share/dlna/DMS/data:
+
+/usr/local/share/dlna/DMS/media:
+
+/usr/local/share/dlna/xml:
+CTTv1.0_dms_cds.xml  dms_csync.xml        dms_xsrs.xml
+XBOX_ext.xml         dms_descr.xml        icon
+access_conf.xml      dms_inet_sync.xml    import.xml
+dms.xml              dms_rui.xml          pg_device_list.xml
+dms_cds.xml          dms_rui_service.xml  pg_level_list.xml
+dms_cds_csync.xml    dms_srs.xml          ui_list.xml
+dms_cds_upload.xml   dms_upload.xml
+dms_cms.xml          dms_upload_rui.xml
+
+/usr/local/share/dlna/xml/icon:
+DMS-defaultTN.jpg
+
+/var:
+cache  dev    flash  lib    lock   log    proc   run    state  sys    tmp
+
+/var/cache:
+
+/var/dev:
+
+/var/flash:
+
+/var/lib:
+misc
+
+/var/lib/misc:
+
+/var/lock:
+account_policy.tdb  locking.tdb         perfmon
+brlock.tdb          messages.tdb        printing
+browse.dat          nmbd.pid            registry.tdb
+connections.tdb     ntdrivers.tdb       sessionid.tdb
+gencache.tdb        ntforms.tdb         smbd.pid
+group_mapping.tdb   ntprinters.tdb      subsys
+
+/var/lock/perfmon:
+
+/var/lock/printing:
+
+/var/lock/subsys:
+
+/var/log:
+cores     log.nmbd  log.smbd
+
+/var/log/cores:
+nmbd  smbd
+
+/var/log/cores/nmbd:
+
+/var/log/cores/smbd:
+
+/var/proc:
+
+/var/run:
+oam.pid
+
+/var/state:
+dhcp
+
+/var/state/dhcp:
+
+/var/sys:
+
+/var/tmp:
+
